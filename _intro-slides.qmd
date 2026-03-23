@@ -1,0 +1,496 @@
+# Welcome!
+
+## Boot Disk
+
+Before we introduce ourselves, let’s take a bit of time to hear from you :
+
+- Name
+- Role
+- Organisation
+
+## A few questions...
+
+<div style='position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden;'><iframe sandbox='allow-popups allow-scripts allow-same-origin allow-presentation' allowfullscreen='true' allowtransparency='true' frameborder='0' height='315' src='https://www.mentimeter.com/app/presentation/aluunihvprf397pddmjcqf1ypxk449or/embed' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' width='420'></iframe></div>
+
+## A bit about us...
+
+:::: {.columns}
+
+::: {.column width='40%'}
+
+
+
+:::
+
+::: {.column width='60%'}
+
+::: {.fragment .fade-in-then-semi-out}
+NIHR Applied Research Collaboration for the South West (PenARC)
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+National partnerships between academia and NHS
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+Undertake collaborative, applied research that makes a real impact
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+Measured on the impact we generate
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+We sit across the Universities of Exeter, Plymouth and Bristol
+:::
+
+
+:::
+
+::::
+
+## What is HSMA?
+
+The **Health Service Modelling Associates (HSMA) Programme**
+
+::: {.fragment .fade-in-then-semi-out}
+1 day a week for 15 months
+:::
+
+:::: {.columns}
+
+::: {.column width='50%'}
+
+::: {.fragment .fade-in-then-semi-out}
+6 MONTHS
+
+Extensive training course teaching programming, Operational Research (OR) and Data Science Methods
+:::
+
+:::
+
+::: {.column width='50%'}
+
+::: {.fragment .fade-in-then-semi-out}
+9 MONTHS
+
+Apply skills to a project of importance for their organisation with mentoring and guidance from us
+:::
+
+
+:::
+
+::::
+
+
+## There is such a thing as a free lunch?
+
+:::: {.columns}
+
+::: {.column width='50%'}
+
+::: {.fragment .fade-in-then-semi-out}
+Offered **free of charge**
+:::
+
+:::
+
+::: {.column width='50%'}
+
+::: {.fragment .fade-in-then-semi-out}
+Teaches entirely Free and Open Source approaches
+:::
+
+:::
+
+::::
+
+
+## {.slide data-menu-title="Operational Research and Data Science"}
+
+:::: {.columns}
+
+::: {.column width='50%'}
+
+### Operational Research
+
+:::
+
+::: {.column width='50%'}
+
+### Data Science
+
+:::
+
+::::
+
+:::: {.columns}
+
+::: {.column width='50%'}
+
+::: {.fragment .fade-in-then-semi-out}
+
+Applying modelling, simulation and analysis techniques to help inform
+decisions and improve decision making.
+
+:::
+
+:::
+
+::: {.column width='50%'}
+
+::: {.fragment .fade-in-then-semi-out}
+
+Using methods from machine learning, statistics, data mining and data analysis to generate insights from data.
+
+:::
+
+:::
+
+::::
+
+:::: {.columns}
+
+::: {.column width='50%'}
+
+::: {.fragment .fade-in-then-semi-out}
+
+We start with a [**system and/or process**]{style="color:yellow"}
+
+:::
+
+:::
+
+::: {.column width='50%'}
+
+::: {.fragment .fade-in-then-semi-out}
+
+We start with the [**data**]{style="color:yellow"}
+
+:::
+
+:::
+
+::::
+
+:::: {.columns}
+
+::: {.column width='50%'}
+
+::: {.fragment .fade-in-then-semi-out}
+
+We use data to parameterise a model to emulate the system/process in-silico.
+
+:::
+
+:::
+
+::: {.column width='50%'}
+
+::: {.fragment .fade-in-then-semi-out}
+
+We use techniques to explore hidden patterns and structures in the data to gain new insights.
+
+:::
+
+:::
+
+::::
+
+## {.slide data-menu-title="OR vs DS Fight - Round 1"}
+
+> “We want to make these changes to our process for triaging patients.
+>
+> What do we predict the impact will be, and what resources will we need to ensure the process is efficient?”
+
+
+## {.slide data-menu-title="OR vs DS Fight - Round 2"}
+
+> “We have lots of data on readmissions.
+>
+> Can we teach a machine to automatically identify which patients are likely to be readmitted?”
+
+## The benefits of modelling {.no-box}
+
+:::: {.columns}
+
+::: {.column width='50%'}
+
+::: {.fragment}
+
+::: {.value-box-simple .bg-light-blue style="font-size: 1.25rem;"}
+
+**Emulation**
+
+A model is a version of reality that can be altered [**without risk**]{style="color:black"} or consequence.
+
+:::
+
+:::
+
+:::
+
+::: {.column width='50%'}
+
+
+::: {.fragment}
+
+::: {.value-box-simple .bg-light-blue style="font-size: 1.25rem;"}
+
+**Communication**
+
+A model can help people communicate about a problem using a [shared language]{style="color:black"} and point of reference.
+
+:::
+
+:::
+
+
+
+:::
+
+::::
+
+
+:::: {.columns}
+
+::: {.column width='50%'}
+
+::: {.fragment}
+
+::: {.value-box-simple .bg-light-blue style="font-size: 1.25rem;"}
+
+**Speed**
+
+Typically, models can be designed and built much [**more quickly**]{style="color:black"} than real world changes can be put into place.
+
+:::
+
+:::
+
+:::
+
+::: {.column width='50%'}
+
+::: {.fragment}
+
+::: {.value-box-simple .bg-light-blue style="font-size: 1.25rem;"}
+
+**Systems Thinking**
+
+The process of designing the model can help people to [**think about their systems**]{style="color:black"}.
+
+:::
+
+:::
+
+
+:::
+
+::::
+
+::: {.fragment}
+
+::: {.value-box-simple .bg-light-blue style="font-size: 1.2rem;"}
+
+**Objectivity**
+
+A model can provide [**objective**]{style="color:black"} support for an argument.  Assuming it’s been built objectively of course…
+
+:::
+
+:::
+
+
+## "What if?" analysis
+
+
+Modelling allows us to undertake something known as “what if?” analysis.
+
+::: {.r-stack}
+
+:::{.fragment .fade-in-then-out}
+
+
+```{mermaid}
+%%| eval: true
+%%| echo: false
+flowchart LR
+    A[Base Case]
+```
+
+This represents our system as it is.
+
+This allows us to see what’s happening now, validate the model and help identify what we might want to think about changing.
+
+
+:::
+
+:::{.fragment .fade-in}
+
+```{mermaid}
+%%| eval: true
+%%| echo: false
+flowchart LR
+    A[Base Case] --> B["What-if"]
+```
+
+We can then use"What if?" Analysis to test scenarios in the model to see what the impact might be if we changed x, y or z.
+
+:::
+
+:::
+
+## "What if?" analysis (continued)
+
+```{=html}
+<div class="what-if-grid">
+```
+
+::: {.fragment}
+
+```{=html}
+<div class="value-box bg-light-blue" style="width:60%; text-align:center;">
+    <div class="icon"><i class="bi bi-clock-fill"></i></div>
+    <div class="details">What if I changed the opening times?</div>
+</div>
+```
+
+:::
+
+::: {.fragment}
+```{=html}
+<div class="value-box bg-light-blue" style="width:60%; text-align:center;">
+    <div class="icon"><i class="bi bi-arrow-down-up"></i></div>
+    <div class="details">What if I moved resource from this part of the pathway to another?</div>
+</div>
+```
+:::
+
+::: {.fragment}
+```{=html}
+<div class="value-box bg-light-blue" style="width:60%; text-align:center;">
+    <div class="icon"><i class="bi bi-people-fill"></i></div>
+    <div class="details">What if demand increased by 10%?</div>
+</div>
+```
+:::
+
+```{=html}
+</div>
+```
+
+
+## HSMA Impact
+
+Over the last [10 years]{style="font-size: 150%;"}...
+
+:::{.fragment}
+
+we have taught [over 450 students]{style="font-size: 150%;"}...
+
+:::
+
+:::{.fragment}
+
+from [over 100 organisations]{style="font-size: 150%;"} nationally
+
+:::
+
+## HSMA Impact Stories
+
+:::: {.columns}
+
+::: {.column width='50%'}
+
+::: {.fragment .fade-in-then-semi-out}
+
+::: {.value-box-simple .bg-light-blue style="font-size: 1.25rem;"}
+
+**Supporting multi million £ business cases**
+
+An early HSMA project was instrumental in obtaining capital funding for for a facility, reducing patients in crisis being sent out of area at significant cost and away from support networks.
+
+:::
+
+:::
+
+
+::: {.fragment .fade-in-then-semi-out}
+
+::: {.value-box-simple .bg-light-blue style="font-size: 1.25rem;"}
+
+**Improving Performance**
+
+What-if anlaysis allowed a HSMA team to work out how to redesign pathways to improve urgent care flow
+
+:::
+
+:::
+
+
+::: {.fragment .fade-in-then-semi-out}
+
+::: {.value-box-simple .bg-light-blue style="font-size: 1.25rem;"}
+
+**Ensuring patient safety**
+
+A GP used simulation modelling to identify issues with COVID vaccine rollout plans in their area - the week after learning it on the programme
+
+:::
+
+:::
+
+
+
+:::
+
+
+
+
+::: {.column width='50%'}
+
+::: {.fragment .fade-in-then-semi-out}
+
+::: {.value-box-simple .bg-light-blue style="font-size: 1.25rem;"}
+
+**Driving better outcomes while saving money**
+
+A recent HSMA project identified £500k+ cost saving opportunities in stroke care while reducing disability and improving patient experience
+
+:::
+
+:::
+
+
+::: {.fragment .fade-in-then-semi-out}
+
+::: {.value-box-simple .bg-light-blue style="font-size: 1.25rem;"}
+
+**Helping Shorten Waits**
+
+A previous project helped to identify strategies to reduce rheumatology patient waiting times by 10 weeks within 5 years
+
+:::
+
+:::
+
+
+::: {.fragment .fade-in-then-semi-out}
+
+::: {.value-box-simple .bg-light-blue style="font-size: 1.25rem;"}
+
+**In-house capacity building**
+
+New data teams developed with HSMAs can manage complex projects that were previously only achievable with consultancy support
+
+:::
+
+:::
+
+
+:::
+
+
+
+::::
