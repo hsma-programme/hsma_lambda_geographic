@@ -1,0 +1,6 @@
+typography:
+  fonts:
+    - family: Lexend
+      source: google
+  base: Lexend
+  headings: Lexend
