@@ -6,6 +6,12 @@ $link-color: #42affa;
 
 /*-- scss:rules --*/
 
+.reveal .backgrounds {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+}
+
 .reveal .slide blockquote {
   border-left: 3px solid $text-muted;
   padding-left: 0.5em;
@@ -52,47 +58,62 @@ body {
     filter: brightness(10) saturate(0);
 }
 
-// /* Style top-level slide sections */
-// .reveal .slides > section {
-//   background-color: rgba(56, 56, 56, 0.7);
-//   max-width: 100%; /* Prevent accidental overflow */
-//   margin: 20px auto;
-//   padding: 1em 0.5em 1.5em 0.5em; /* top, right, bottom, left */
-//   border-radius: 12px;
-//   box-sizing: border-box;
-//   color: white;
-//   display: block;
-//   word-wrap: break-word;
-//   overflow-wrap: break-word;
-// }
-
-// Create a grey box
-/* Remove extra padding from the slides container */
+// Create a grey box using a pseudo-element (doesn't interfere with bg)
 .reveal .slides {
   padding: 0 !important;
-  /* Style top-level slide sections */
-  background-color: rgba(56, 56, 56, 0.7);
-  margin: 0px 20px 20px 20px;
-  padding: 0px 20px 0px 20px; /* top, right, bottom, left */
   border-radius: 12px;
   box-sizing: border-box;
-  display: block;
   word-wrap: break-word;
   overflow-wrap: break-word;
-
-  /* Overspill effect */
-  transform: scaleX(1.1); /* 10% wider */
+  transform: scaleX(1.1);
   transform-origin: center;
+
+  // Remove the background from here
+  background-color: transparent;
 }
 
-/* Nested slide sections (if any) — remove padding but keep content */
-.reveal .slides section > section {
-  background: none;
-  padding: 10px 20px 20px 20px;
-  margin: 0;
-  border: none;
+// Default: content starts at the top for regular slides
+.reveal .slides > section {
+  // background-color: rgba(56, 56, 56, 0.8);
+  border-radius: 12px;
+  padding: 20px;
+  box-sizing: border-box;
+  // min-height: 85vh;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
+// Title slide — target by id
+.reveal .slides > section#title-slide {
+  background-color: rgba(56, 56, 56, 0.8);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+// Restore alignment for title slide children
+.reveal .slides > section#title-slide h1,
+.reveal .slides > section#title-slide .quarto-title-authors,
+.reveal .slides > section#title-slide .quarto-title-author,
+.reveal .slides > section#title-slide .quarto-title-author-name,
+.reveal .slides > section#title-slide p {
+  text-align: center;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+// Grey box only on the stack wrapper (content slides)
+.reveal .slides > section.stack {
+  background-color: rgba(56, 56, 56, 0.8);
+  border-radius: 12px;
+}
+
+// Limit the width of the elements within the slides so they don't come too close to
+// the edge of the grey background box (or overhang)
 .sourceCode {
   width: 95% !important;
   max-width: 95% !important;
@@ -102,6 +123,14 @@ body {
   width: 95% !important;
   max-width: 95% !important;
 }
+
+.reveal .slides > section.stack > section.slide {
+  box-sizing: border-box;
+  // width: 100% !important;
+  padding-right: 60px !important;
+}
+
+
 
 iframe.stlite {
     width: 1px;
