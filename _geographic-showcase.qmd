@@ -1,0 +1,116 @@
+# Part 2: Geographic Showcase
+
+## HSMA Testimony
+
+::: {.value-box}
+
+"Within weeks of covering geographic modelling, I was able to create bespoke charts for a client project and produced quality maps that added value to the overall project.
+
+The client feedback was extremely positive, saying how useful they were, and how they would use these in future bid proposals."
+
+- [Lyndsey Allen, HSMA 5, Senior Analytics Consultant for the NECS Yorkshire and Humber Consultancy team](https://www.necsu.nhs.uk/lyndsey-allen-health-service-modelling-associates-hsma-programme-accreditation-2/)
+:::
+
+## Mapping of Hospice Demand and Assets
+
+- HSMA used their new mapping skills to map deprivation, referrals and hospice-related assets together
+
+- Contributed to a successful business case
+
+
+## Mapping of Violent Crime
+
+- HSMAs used their skills to isolate hotspots of violent crime to target.
+
+![](assets\2026-07-27-17-02-06.png)
+
+## Cardiac Service Reorganisation
+
+This project focussed on **Reducing Travel Times to Treatment for Cardiac Patients in the South East of England**
+
+```{=html}
+<iframe width='780' height='500' src='https://hsma4cardiac.streamlit.app/Kent_and_Medway_Travel_Times' title='HSMA 4 Cardiac App'></iframe>
+```
+
+
+## Neonatal Unit Modelling
+
+Used Badgernet neonatal care database
+
+:::: {.columns}
+
+::: {.column width='33%'}
+
+::: {.value-box}
+22 sites
+:::
+
+:::
+
+::: {.column width='33%'}
+::: {.value-box}
+1200 possible locations for demand to come from
+:::
+:::
+
+::: {.column width='33%'}
+::: {.value-box}
+3 levels of care
+:::
+:::
+
+::::
+
+
+Multi-objective optimisation, including
+
+:::: {.columns}
+
+::: {.column width='50%'}
+::: {.value-box fragment="true"}
+Minimising average travel time
+:::
+:::
+
+::: {.column width='50%'}
+::: {.value-box fragment="true"}
+Maximising proportion within 30 minutes
+:::
+:::
+
+::::
+
+:::: {.columns}
+
+::: {.column width='50%'}
+::: {.value-box fragment="true"}
+Maximising smallest number of admissions per year
+:::
+:::
+
+::: {.column width='50%'}
+::: {.value-box fragment="true"}
+Minimising largest number of admissions per year
+:::
+:::
+
+::::
+
+## Ambulance Service Boundary Reorganisation
+
+:::: {.columns}
+
+::: {.column width='50%'}
+
+The North West Ambulance service used advanced location optimization approaches to update historic ambulance dispatch boundaries, which were now imbalanced and inefficient after population shifts since their original setup.
+
+
+:::
+
+::: {.column width='50%'}
+
+![](assets\2026-07-28-17-08-33.png)
+
+:::
+
+::::

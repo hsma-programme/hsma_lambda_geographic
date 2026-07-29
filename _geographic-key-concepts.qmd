@@ -1,0 +1,195 @@
+# Key Geographic Concepts
+
+Before we talk too much about the impressive things we can do with geographic data science, we need to cover some fundamentals.
+
+## A Note Before we Proceed
+
+In our other lambda workshop, we teach Discrete Event Simulation (DES)
+
+This is a powerful technique for building models of queues and pathways - like elective waiting list, hospital theatres, emergency departments, and more.
+
+
+## A Mental Model for DES
+
+:::: {.columns}
+
+::: {.column width='50%'}
+
+Discrete Event Simulation is like Lego
+
+We give you a few bricks - the core components of discrete event simulation - and suddenly you can build pretty much anything you can imagine
+
+:::
+
+::: {.column width='50%'}
+
+![](assets/des-lego.png){height=500px}
+
+:::
+
+::::
+
+## A Mental Model for Geographic
+
+:::: {.columns}
+
+::: {.column width='50%'}
+
+Geographic modelling is more like getting into DIY and buying yourself an empty toolbox.
+
+You start with your core geographic knowledge and map building skills.
+
+This is your hammer.
+
+
+:::
+
+::: {.column width='50%'}
+
+![](assets/toolbox.png){height=500px}
+
+:::
+
+::::
+
+## DES vs Geographic
+
+:::: {.columns}
+
+::: {.column width='50%'}
+
+And it will take time to build up your collection of tools…
+
+But HSMA gets people started with some really powerful techniques that can help with data-driven decision making.
+
+:::
+
+::: {.column width='50%'}
+
+![](assets/tool-collection.png){height=500px}
+
+:::
+
+::::
+
+## {.slide data-menu-title='Our Approach to Geographic Modelling'}
+
+While we can’t teach students to solve **every** geographic problem, we help them
+
+:::{.incremental}
+- Fill their toolkit with the core tools they’ll need again and again
+    - geographic concepts, map making, travel time matrix generation, automated reporting, web apps
+- Add in some fancy tools for certain kinds of problems (location optimization)
+- Understand where to go to get a new tool when they need it
+    - Or use their other tools to build a super-tool!
+:::
+
+
+## Point Maps
+
+:::: {.columns}
+
+::: {.column width='50%'}
+Point maps tell us where useful things are
+
+- Existing resources (hospitals, GP surgeries)
+:::
+
+::: {.column width='50%'}
+
+:::
+
+::::
+
+
+
+## Choropleths
+
+Choropleths tell us things about areas
+
+```{python}
+from lokigi.site import SiteProblem
+
+problem = SiteProblem()
+problem.add_region_geometry_layer("data/LSOA_Devon_2021_EW_BSC_V4.gpkg", common_col="LSOA21NM")
+problem.add_demand("data/demand_MF_50_84.csv",     demand_col="Total",
+    location_id_col="LSOA 2021 Name")
+problem.add_equity_data(
+    "data/devon_imd_2025_2021_LSOAs.csv",
+    equity_col="Index of Multiple Deprivation (IMD) Decile (where 1 is most deprived 10% of LSOA",
+    common_col="LSOA name (2021)",
+    label="Indices of Multiple Deprivation",
+    continuous_measure=True,
+    reverse=False
+    )
+```
+
+```{python}
+problem_randomised.plot_region_geometry_layer(plot_demand=True, interactive=True)
+```
+
+
+## Tobler's First Law
+
+::: {.value-box}
+Everything is related to everything else,
+but near things are more related than distant things
+:::
+
+
+## Tobler's First Law in Action
+
+```{python}
+from lokigi.site import SiteProblem
+
+problem = SiteProblem()
+problem.add_region_geometry_layer("data/LSOA_Devon_2021_EW_BSC_V4.gpkg", common_col="LSOA21NM")
+problem.add_demand("data/demand_MF_50_84.csv",     demand_col="Total",
+    location_id_col="LSOA 2021 Name")
+problem.add_equity_data(
+    "data/devon_imd_2025_2021_LSOAs.csv",
+    equity_col="Index of Multiple Deprivation (IMD) Decile (where 1 is most deprived 10% of LSOA",
+    common_col="LSOA name (2021)",
+    label="Indices of Multiple Deprivation",
+    continuous_measure=True,
+    reverse=False
+    )
+```
+
+:::{.fragment}
+
+```{python}
+problem_randomised = problem.copy()
+
+problem_randomised.equity_data
+
+problem_randomised.equity_data["Index of Multiple Deprivation (IMD) Decile (where 1 is most deprived 10% of LSOA"] = (
+    problem_randomised.equity_data["Index of Multiple Deprivation (IMD) Decile (where 1 is most deprived 10% of LSOA"]
+    .sample(frac=1, random_state=18)
+    .to_numpy()
+)
+
+ax = problem_randomised.plot_region_geometry_layer(plot_equity=True, interactive=False)
+```
+
+:::
+
+:::{.fragment}
+
+```{python}
+ax = problem.plot_region_geometry_layer(plot_equity=True, interactive=False)
+
+```
+
+:::
+
+## Hotspots
+
+
+## Catchment
+
+## Equity Data
+
+## Travel Times
+
+## Isochrones

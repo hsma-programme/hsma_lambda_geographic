@@ -1,7 +1,7 @@
 ---
-title: "Title"
+title: "Anybody Have a Map?"
 author:
-    name: Dr Dan Chalk, Sammi Rosser
+    name: Sammi Rosser, Dr Dan Chalk
     affiliation: Health Service Modelling Associates Programme
 execute:
   eval: false # Don't run code by default
@@ -21,6 +21,9 @@ format:
     transition: fade
     plotly-connected: true
     background-transition: fade
+    mermaid:
+      theme: neutral
+      format: svg
     menu:
         numbers: true
     preload-iframes: true
@@ -32,9 +35,6 @@ format:
     theme: [default, custom.scss]
     title-slide-attributes:
         data-background-image: assets/banner.png
-    include-in-header:
-      - text: |
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><link href='https://fonts.googleapis.com/css?family=Lexend' rel='stylesheet'>
     verticator:
       themetag: 'h1'
       color: ''
@@ -46,148 +46,25 @@ format:
       autogenerate: true
       tooltip: false
       scale: 1
-    revealjs-plugins:
-      - verticator
-      - fullscreen
-      - pointer
+    include-in-header:
+      file: resources/header.html
+revealjs-plugins:
+  - verticator
+  - fullscreen
+  - pointer
 filters:
   - stlite # modified stlite extension
   - reveal-header
+  - focus-list
+  - value-box
 ---
 
-# Section Header Example
+{{< include _intro-slides.qmd >}}
 
-Your Content Here
+{{< include _intro-or-ds-concepts.qmd >}}
 
-## Slide Example
+{{< include _geographic-key-concepts.qmd >}}
 
-This is a slide with some text on it.
+{{< include _geographic-intro-exercise.qmd >}}
 
-# Code Examples
-
-## Defining code snippets in the qmd file
-
-```{python}
-import plotly.express as px
-
-px.scatter(x=[1,2,3], y=[2,3,4])
-```
-
-
-## Defining and running code snippets in the qmd file
-
-```{python}
-#| eval: true
-
-import plotly.express as px
-import plotly.io as pio
-pio.renderers.default = "notebook"
-
-px.scatter(x=[1,2,3], y=[2,3,4], height=400)
-```
-
-## Including just the output
-
-```{python}
-#| eval: true
-#| echo: false
-
-import plotly.express as px
-import plotly.io as pio
-pio.renderers.default = "notebook"
-
-px.scatter(x=[1,2,3], y=[2,3,4])
-```
-
-## Importing code snippets from files
-
-```{python}
-{{< include code_examples/code_example_1.py >}}
-```
-
-## Importing and running code snippets
-
-```{python}
-#| eval: true
-{{< include code_examples/code_example_1.py >}}
-```
-
-## Embedded Streamlit
-
-```{stlite-python}
-import micropip
-await micropip.install("plotly")
-
-import streamlit as st
-from plotly import express as px
-
-st.title("Sample App")
-
-st.slider("Choose a number between 1 and 10", min_value=1, max_value=10, value=5)
-
-st.plotly_chart(
-    px.scatter(x=[1,2,3], y=[2,3,4])
-)
-```
-
-# Layouts
-
-## 2 col layout example
-
-:::: {.columns}
-
-::: {.column width='50%'}
-
-Here is column 1
-
-:::
-
-::: {.column width='50%'}
-
-Here is column 2
-
-:::
-
-::::
-
-## Incremental list reveal
-
-This will be on the screen at the start.
-
-:::{.incremental}
-
-- Here's bullet point 1
-- Here's bullet point 2
-
-:::
-
-
-## Fragments
-
-This will be on the screen at the start.
-
-:::{.fragment}
-
-This won't appear until you press a button.
-
-:::
-
-:::{.fragment}
-
-Then this will appear when you're ready.
-
-![](assets/hsma_logo.png)
-
-:::
-
-
-
-# Other features
-
-## Speaker notes
-
-There are some speaker notes on this slide - but you can't see them unless you're in speaker view!
-
-:::{.notes}
-Aha! I'm secret notes.
-:::
+{{< include _geographic-showcase.qmd >}}

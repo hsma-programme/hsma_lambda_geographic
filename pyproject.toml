@@ -1,0 +1,21 @@
+[project]
+name = "hsma_lambda_geographic"
+version = "0.1.0"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11,<3.14"
+authors = [
+    { name = "Sammi Rosser", email = "s.j.rosser@exeter.ac.uk" },
+]
+
+dependencies = [
+    "numpy==2.4.6",
+    "numba>0.60.0",
+    "lokigi>=0.8.0",
+    "nbclient",
+    "ipywidgets>=8.1.5,<9.0.0",
+    "jupyterlab>=4.2.4,<5.0.0",
+    "jupyterlab-spellchecker>=0.8.4,<1.0.0",
+    "lintquarto>=0.8.0,<1.0.0",
+    "nbqa",
+]
