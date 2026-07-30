@@ -112,7 +112,7 @@ from lokigi.site import SiteProblem
 
 problem = SiteProblem()
 problem.add_region_geometry_layer("data/LSOA_Devon_2021_EW_BSC_V4.gpkg", common_col="LSOA21NM")
-problem.add_demand("data/demand_MF_50_84.csv",     demand_col="Total",
+problem.add_demand("data/demand_MF_50_84.csv",     demand_col="MF50-84 Percentage of Total LSOA Population",
     location_id_col="LSOA 2021 Name")
 problem.add_equity_data(
     "data/devon_imd_2025_2021_LSOAs.csv",
@@ -125,36 +125,37 @@ problem.add_equity_data(
 ```
 
 ```{python}
-problem_randomised.plot_region_geometry_layer(plot_demand=True, interactive=True)
+problem.plot_region_geometry_layer(plot_demand=True, interactive=True, cmap="viridis")
 ```
 
 
 ## Tobler's First Law
+
+:::: {.columns}
+
+::: {.column width='50%'}
+![](assets/ChatGPT Image Jul 29, 2026, 03_03_46 PM.png)
+:::
+
+::: {.column width='50%'}
 
 ::: {.value-box}
 Everything is related to everything else,
 but near things are more related than distant things
 :::
 
+:::
+
+::::
+
+
+
 
 ## Tobler's First Law in Action
 
-```{python}
-from lokigi.site import SiteProblem
+:::: {.columns}
 
-problem = SiteProblem()
-problem.add_region_geometry_layer("data/LSOA_Devon_2021_EW_BSC_V4.gpkg", common_col="LSOA21NM")
-problem.add_demand("data/demand_MF_50_84.csv",     demand_col="Total",
-    location_id_col="LSOA 2021 Name")
-problem.add_equity_data(
-    "data/devon_imd_2025_2021_LSOAs.csv",
-    equity_col="Index of Multiple Deprivation (IMD) Decile (where 1 is most deprived 10% of LSOA",
-    common_col="LSOA name (2021)",
-    label="Indices of Multiple Deprivation",
-    continuous_measure=True,
-    reverse=False
-    )
-```
+::: {.column width='50%'}
 
 :::{.fragment}
 
@@ -174,22 +175,187 @@ ax = problem_randomised.plot_region_geometry_layer(plot_equity=True, interactive
 
 :::
 
+:::
+
+::: {.column width='50%'}
+
 :::{.fragment}
 
 ```{python}
 ax = problem.plot_region_geometry_layer(plot_equity=True, interactive=False)
-
 ```
 
 :::
 
+:::
+
+::::
+
+
+::: {.fragment}
+
+
+
+
+:::: {.columns}
+
+::: {.column width='50%'}
+Indices of Deprivation - [**randomly**]{style="color:yellow"} spread
+
+:::
+
+::: {.column width='50%'}
+Indices of Deprivation - [**real**]{style="color:yellow"} spread
+:::
+
+::::
+
+
+:::
+
+
+
+
 ## Hotspots
+
+
+## Data
+
+:::: {.columns}
+
+::: {.column width='70%'}
+### National Free Datasets
+- Geographical boundaries at different resolutions
+- Road networks
+- Bus and tram timetables (and, to a lesser extent, rail)
+- Indices of Multiple Deprivation (aggregated and domains)
+- Population by age group
+- Certain types of healthcare asset (GP surgeries, dentists, care homes, adult social care, etc.)
+- Environmental Data
+- Ethnicity
+- Car availability estimates
+- Healthcare indicators (diabetes prevalence, etc.)
+:::
+
+::: {.column width='30%'}
+### Locally Held Datasets
+
+- Your demand
+- Your activity
+- Your services
+- Service capacity
+
+### Generated Data
+
+- Travel times to current and proposed services
+- Carbon impact of travel
+- Projected demand
+:::
+
+::::
+
+**Question:** What else?
+
+
+## Travel Times
+
+```{python}
+from plotting_helpers import plot_route_comparison
+```
+
+
+```{python}
+# WGS84 coordinates
+cullompton = (-3.3924, 50.8588)
+plymouth = (-4.1427, 50.3755)
+
+fig, axes = plot_route_comparison(
+    start_coords=cullompton,
+    end_coords=plymouth,
+    start_name="Cullompton",
+    end_name="Plymouth",
+    road_route="data/cullompton_plymouth.geojson",
+    units="miles",
+)
+```
+
+## Travel Times
+
+```{python}
+# WGS84 coordinates
+cardiff = (-3.1678090091493956, 51.484651426319466)
+
+fig, axes = plot_route_comparison(
+    start_coords=cullompton,
+    end_coords=cardiff,
+    start_name="Cullompton",
+    end_name="Cardiff",
+    road_route="data/cullompton_cardiff.geojson",
+    units="miles",
+)
+```
+
+
+## Obtaining Travel Data
+
+
+
+
+## Isochrones
+
+```{python}
+from plotting_helpers import plot_isochrones
+```
+
+:::: {.columns}
+
+::: {.column width='50%'}
+
+```{python}
+plot_isochrones(
+    (-3.3924, 50.8588),
+    mode="auto",
+)
+```
+
+:::
+
+::: {.column width='50%'}
+
+```{python}
+plot_isochrones(
+    (-3.3924, 50.8588),
+    mode="pedestrian",
+)
+```
+
+:::
+
+::::
+
+
+## Coverage
+
+```{python}
+import geopandas
+devon_mius = geopandas.read_file("data/devon_mius.geojson")
+
+plot_isochrones(
+   [(x.x, x.y) for x in devon_mius.geometry.to_list()],
+    contours=[20],
+    mode="auto",
+)
+```
 
 
 ## Catchment
 
-## Equity Data
 
-## Travel Times
 
-## Isochrones
+## Exercise
+
+How much do you think geography matters to your organisation?
+
+How does geography currently play into decisions?
+
+How do you make use of maps in your organisation?

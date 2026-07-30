@@ -359,11 +359,12 @@ Where do you feel like your organisation is in this progression?
 
 :::: {.columns}
 
-::: {.column width='50%'}
+::: {.column width='30%'}
 - Do you know if you have someone with the job title 'data scientist' or something similar?
+- Do the splits between backward and forward reflect your experience?
 :::
 
-::: {.column width='50%'}
+::: {.column width='70%'}
 
 ![](resources/pyramid-full.drawio.svg)
 :::

@@ -1,0 +1,37 @@
+# Other Techniques
+
+There are a few things we don't teach and directly support on HSMA, but that HSMAs may be able to build up to using their foundation.
+
+
+## Routing and Scheduling
+
+
+
+## PenCHORD Project Showcase - Dialysis Transport during COVID-19
+
+
+
+
+## Boundary Optimization
+
+
+
+
+## HSMA Project Showcase - Boundary Optimization for North West Ambulance Service
+
+:::: {.columns}
+
+::: {.column width='50%'}
+
+The North West Ambulance service used advanced location optimization approaches to update historic ambulance dispatch boundaries, which were now imbalanced and inefficient after population shifts since their original setup.
+
+
+:::
+
+::: {.column width='50%'}
+
+![](assets\2026-07-28-17-08-33.png)
+
+:::
+
+::::

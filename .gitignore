@@ -2,3 +2,11 @@
 *.pyc
 
 **/*.quarto_ipynb
+CLAUDE.md
+data/devon-260422_valhalla-modified-traffic.json
+data/*.osm.pbf
+data/devon-260422_valhalla-modified-traffic_tiles
+data/devon-260422_valhalla-modified-traffic_tiles/*
+data/south_west_to_wales-260729_valhalla.json_tiles
+data/south_west_to_wales-260729_valhalla.json_tiles/*
+south_west_to_wales-260729_valhalla.json.json

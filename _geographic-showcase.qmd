@@ -1,15 +1,5 @@
-# Part 2: Geographic Showcase
+# Geographic Showcase
 
-## HSMA Testimony
-
-::: {.value-box}
-
-"Within weeks of covering geographic modelling, I was able to create bespoke charts for a client project and produced quality maps that added value to the overall project.
-
-The client feedback was extremely positive, saying how useful they were, and how they would use these in future bid proposals."
-
-- [Lyndsey Allen, HSMA 5, Senior Analytics Consultant for the NECS Yorkshire and Humber Consultancy team](https://www.necsu.nhs.uk/lyndsey-allen-health-service-modelling-associates-hsma-programme-accreditation-2/)
-:::
 
 ## Mapping of Hospice Demand and Assets
 
@@ -92,25 +82,6 @@ Maximising smallest number of admissions per year
 ::: {.value-box fragment="true"}
 Minimising largest number of admissions per year
 :::
-:::
-
-::::
-
-## Ambulance Service Boundary Reorganisation
-
-:::: {.columns}
-
-::: {.column width='50%'}
-
-The North West Ambulance service used advanced location optimization approaches to update historic ambulance dispatch boundaries, which were now imbalanced and inefficient after population shifts since their original setup.
-
-
-:::
-
-::: {.column width='50%'}
-
-![](assets\2026-07-28-17-08-33.png)
-
 :::
 
 ::::

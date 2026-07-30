@@ -1,0 +1,66 @@
+
+# Final Exercise
+
+## Project Planning
+
+Now you know what it's possible to achieve, review your list of geographical problems from earlier.
+
+Do
+
+Are there other things you'd plan now you know more?
+
+What projects would you propose for HSMAs from your organisation to work on?
+
+Write
+
+
+# Next Steps
+
+## Before HSMA 7
+
+:::: {.columns}
+
+::: {.column width='33%'}
+
+::: {.value-box}
+Liaise with people in your organisation to identify candidates for the HSMA Programme.
+:::
+
+:::
+
+::: {.column width='33%'}
+::: {.value-box}
+We will record your proposal in our online database - available to others on the Lambda programme as others may have the same issues and want to link up - and provide you with a proposal number.
+
+You can also edit your proposal or add other proposals using the online form.
+:::
+:::
+
+::: {.column width='33%'}
+When applicants apply to the programme, they will be asked if their nomination has come via HSMA-Lambda.
+
+They should answer YES, and provide the project proposal ID for your proposal(s).
+:::
+
+::::
+
+## During HSMA 7
+
+::: {.value-box}
+When work on your project begins (after Phase 1 of the HSMA training), you will be notified.
+:::
+
+::: {.value-box}
+You will be invited to monthly forums to hear updates on the project work (as well as other projects in the programme).
+:::
+
+::: {.value-box}
+You will also be invited to an end of programme showcase presentation of the work
+:::
+
+
+## After HSMA 7
+
+::: {.value-box}
+After completion of the project, we’ll follow up with you to see what happened as a result of the work.  This is important for us as we need to capture impact from our work.
+:::

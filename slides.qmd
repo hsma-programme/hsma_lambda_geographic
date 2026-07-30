@@ -4,8 +4,9 @@ author:
     name: Sammi Rosser, Dr Dan Chalk
     affiliation: Health Service Modelling Associates Programme
 execute:
-  eval: false # Don't run code by default
-  echo: true # Display code cells by default
+  eval: true # Don't run code by default
+  echo: false # Display code cells by default
+  freeze: auto
 format:
   revealjs:
     embed-resources: false # necessary for stlite-quarto and chalkboard to work
@@ -67,4 +68,12 @@ filters:
 
 {{< include _geographic-intro-exercise.qmd >}}
 
+{{< include _location-optimization.qmd >}}
+
+{{< include _geographic-main-exercise.qmd >}}
+
 {{< include _geographic-showcase.qmd >}}
+
+{{< include _other-geographic-techniques.qmd >}}
+
+{{< include _final-exercise-next-steps.qmd >}}
