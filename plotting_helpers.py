@@ -185,6 +185,7 @@ def plot_isochrones(
     alpha=0.5,
     add_basemap=True,
     origin_kwargs=None,
+    title=None,
 ):
     """
     Plot Valhalla isochrones.
@@ -315,5 +316,8 @@ def plot_isochrones(
     ax.legend(ordered_handles, ordered_labels, title="Travel time")
 
     ax.set_axis_off()
+
+    if title is not None:
+        ax.set_title(title)
 
     # return isochrones

@@ -97,6 +97,19 @@ Point maps tell us where useful things are
 
 ::: {.column width='50%'}
 
+```{python}
+from lokigi.site import SiteProblem
+
+problem_simplest = SiteProblem()
+problem_simplest.add_sites("data/devon_mius.geojson", candidate_id_col="Facility_Name")
+problem_simplest.add_region_geometry_layer("data/LSOA_Devon_2021_EW_BSC_V4.gpkg", common_col="LSOA21NM")
+
+```
+
+```{python}
+problem_simplest.plot_sites()
+```
+
 :::
 
 ::::
@@ -105,15 +118,13 @@ Point maps tell us where useful things are
 
 ## Choropleths
 
-Choropleths tell us things about areas
-
 ```{python}
-from lokigi.site import SiteProblem
-
 problem = SiteProblem()
+problem.add_sites("data/devon_mius.geojson", candidate_id_col="Facility_Name")
 problem.add_region_geometry_layer("data/LSOA_Devon_2021_EW_BSC_V4.gpkg", common_col="LSOA21NM")
 problem.add_demand("data/demand_MF_50_84.csv",     demand_col="MF50-84 Percentage of Total LSOA Population",
     location_id_col="LSOA 2021 Name")
+problem.add_travel_matrix("data/devon_miu_travel_matrix.csv", source_col="from_id")
 problem.add_equity_data(
     "data/devon_imd_2025_2021_LSOAs.csv",
     equity_col="Index of Multiple Deprivation (IMD) Decile (where 1 is most deprived 10% of LSOA",
@@ -124,9 +135,13 @@ problem.add_equity_data(
     )
 ```
 
+Choropleths tell us things about areas
+
 ```{python}
 problem.plot_region_geometry_layer(plot_demand=True, interactive=True, cmap="viridis")
 ```
+
+
 
 
 ## Tobler's First Law
@@ -134,13 +149,13 @@ problem.plot_region_geometry_layer(plot_demand=True, interactive=True, cmap="vir
 :::: {.columns}
 
 ::: {.column width='50%'}
-![](assets/ChatGPT Image Jul 29, 2026, 03_03_46 PM.png)
+![](assets/tobler_ChatGPT.png)
 :::
 
 ::: {.column width='50%'}
 
-::: {.value-box}
-Everything is related to everything else,
+::: {.value-box align="center"}
+Everything is related to everything else,\n
 but near things are more related than distant things
 :::
 
@@ -218,8 +233,39 @@ Indices of Deprivation - [**real**]{style="color:yellow"} spread
 
 ## Hotspots
 
+:::: {.columns}
+
+::: {.column width='50%'}
+```{python}
+problem.plot_region_geometry_layer(plot_demand=True)
+```
+
+Choropleths can tell us how a metric (like demand, equity, or incidents) varies.
+
+:::
+
+
+
+
+::: {.column width='50%'}
+::: {.fragment}
+```{python}
+problem.plot_hotspots(what="demand")
+```
+:::
+:::
+
+But using statistical methods for identifying hotspots, coldspots and outliers can help us identify significant patterns.
+
+::::
+
+
+
+
 
 ## Data
+
+::: {style="font-size: 50%;"}
 
 :::: {.columns}
 
@@ -254,10 +300,19 @@ Indices of Deprivation - [**real**]{style="color:yellow"} spread
 
 ::::
 
-**Question:** What else?
+:::
+
+::: {.value-box fragment=".fade-in"}
+What else?
+:::
+
 
 
 ## Travel Times
+
+
+
+## Travel Times - Good Enough?
 
 ```{python}
 from plotting_helpers import plot_route_comparison
@@ -279,7 +334,7 @@ fig, axes = plot_route_comparison(
 )
 ```
 
-## Travel Times
+## Travel Times - Limitations
 
 ```{python}
 # WGS84 coordinates
@@ -311,10 +366,13 @@ from plotting_helpers import plot_isochrones
 
 ::: {.column width='50%'}
 
+### Driving
+
 ```{python}
-plot_isochrones(
+fig = plot_isochrones(
     (-3.3924, 50.8588),
     mode="auto",
+    title="Driving"
 )
 ```
 
@@ -326,6 +384,7 @@ plot_isochrones(
 plot_isochrones(
     (-3.3924, 50.8588),
     mode="pedestrian",
+    title="Walking"
 )
 ```
 
@@ -335,6 +394,10 @@ plot_isochrones(
 
 
 ## Coverage
+
+:::: {.columns}
+
+::: {.column width='70%'}
 
 ```{python}
 import geopandas
@@ -348,14 +411,84 @@ plot_isochrones(
 ```
 
 
+:::
+
+::: {.column width='30%'}
+
+Layering multiple isochrones is one way we can start to get an idea of where there are areas of poorer access that could be targeted.
+
+:::
+
+::::
+
+
+
+
 ## Catchment
+
+Taking this one step further, 2SFCA (2 step floating-catchment area) combines both demand and capacity to give a more detailed look at not just where there is access, but where there is sufficient capacity.
+
+```{python}
+import geopandas
+problem2 = problem.copy()
+
+problem2.add_demand(
+    "data/demand_MF_50_84.csv",
+    demand_col="MF50-84",
+    location_id_col="LSOA 2021 Name"
+    )
+
+problem2.demand_data["MF50-84"] = problem2.demand_data["MF50-84"] / 5
+
+devon_mius_gdf = geopandas.read_file("data/devon_mius.geojson")
+
+devon_mius_gdf["appointments_per_year"] = [8000 for i in range(0,15)]
+
+problem2.add_sites(
+    devon_mius_gdf,
+    candidate_id_col="Facility_Name"
+    )
+# problem2.show_sites()
+
+problem2.add_travel_matrix(
+    "data/devon_miu_travel_matrix.csv",
+    source_col="from_id",
+    unit="minutes"
+    )
+
+fig = problem2.plot_accessibility(
+    supply_col="appointments_per_year",
+    catchment_size=30
+    )
+```
+
+
+## Catchment
+
+:::: {.columns}
+
+::: {.column width='50%'}
+```{python}
+fig
+```
+:::
+
+::: {.column width='50%'}
+
+- **Step 1:** Calculate supply to demand ratio per facility
+    - e.g. a facility can support 500 appointments per year, but
+
+- **Step 2:** Sum up the supply:demand ratio for facilities each region has access to
+:::
+
+::::
 
 
 
 ## Exercise
 
-How much do you think geography matters to your organisation?
+- How do you make use of maps in your organisation? Which of these don't you recognise?
 
-How does geography currently play into decisions?
+- How much do you think geography matters to your organisation?
 
-How do you make use of maps in your organisation?
+- How does geography currently play into decisions?

@@ -3,15 +3,46 @@
 
 ## Project Planning
 
-Now you know what it's possible to achieve, review your list of geographical problems from earlier.
-
-Do
+Now you know more about what it's possible to achieve, review your list of geographical problems from earlier.
 
 Are there other things you'd plan now you know more?
 
-What projects would you propose for HSMAs from your organisation to work on?
+What projects would you propose for HSMAs from your organisation to work on? Use the following prompts to draft your proposals.
 
-Write
+:::: {.columns}
+
+::: {.column width='50%'}
+::: {.value-box}
+Summarise your problem in one sentence
+:::
+:::
+
+::: {.column width='50%'}
+::: {.value-box}
+Classify the problem: is it location optimisation (adding, removing or designing from scratch), routing, scheduling, etc.
+:::
+:::
+
+::::
+
+:::: {.columns}
+
+::: {.column width='50%'}
+::: {.value-box}
+What decision would the project inform?
+:::
+:::
+
+::: {.column width='50%'}
+::: {.value-box}
+What would the potential impact on patients, staff or services be?
+(e.g. money saving, better access, reduced waits, etc.)
+:::
+:::
+
+::::
+
+
 
 
 # Next Steps

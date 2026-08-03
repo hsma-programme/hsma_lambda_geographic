@@ -7,13 +7,40 @@ We're now going to put you into rooms to work through a location optimization pr
 
 To begin with, you won't have this technique available to you - but you will have an analyst who has been trained to create some of the kinds of maps we've talked about today.
 
+
+## The scenario
+
+You are responsible for the provision of community diagnostic centres in Devon.
+
+You have been tasked with opening one additional centre.
+
+You have been told to prioritise access for those aged 50-84, and for those in more deprived areas.
+
+
+:::: {.columns}
+
+::: {.column width='50%'}
+
+::: {.value-box}
+
 Take the time to explore the maps.
+
+:::
+
+:::
+
+::: {.column width='50%'}
 
 ::: {.value-box}
 
 Don't worry about getting the "right" answer.
 
 :::
+
+:::
+
+::::
+
 
 
 ## Review
