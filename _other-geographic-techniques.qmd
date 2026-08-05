@@ -31,6 +31,8 @@ You may have heard of the 'travelling salesman problem' - where the goal is to f
 
 This is actually a hard problem for computers to solve as the number of points increases - and even more so when you expand it to multiple vehicles (e.g. community nurses) with constraints (e.g. patient continuity, different skill mixes).
 
+But computers are, overall, better at it than humans - and can do it at scale, automatically.
+
 :::
 
 ::: {.column width='50%'}
@@ -40,13 +42,15 @@ This is actually a hard problem for computers to solve as the number of points i
 ::::
 
 
-## Dos and Don'ts of Routing Projects
+## Don'ts of Routing Projects
 
 While you *could* set up a project that will route your community nurses efficiently every day - we'd advise against it.
 
-These kinds of tools are deceptively complex, particularly to ensure they run day in, day out.
+These kinds of tools are deceptively complex to create, particularly to ensure they run day in, day out, taking into account enough operational nuances.
 
 This is one of the few places we would say 'leave it to the software comparies'.
+
+## Do's of Routing Projects
 
 But routing and scheduling can still have a place in service improvement projects!
 
@@ -74,7 +78,53 @@ Modelling multiple disease spread scenarios, they were able to show a significan
 
 ## Boundary Optimization
 
+Boundaries appear frequently in healthcare services.
 
+Perhaps you use them to determine which of several sub-teams a patient will be allocated to when they are referred - e.g. for community physio teams, or community mental healthcare or crisis care.
+
+:::: {.columns}
+
+::: {.column width='33%'}
+::: {.value-box}
+But how were those boundaries drawn?
+
+:::
+:::
+
+::: {.column width='33%'}
+::: {.value-box}
+Are they actually dividing work in a fair and efficient way?
+
+:::
+:::
+
+::: {.column width='33%'}
+::: {.value-box}
+When were they last updated?
+:::
+:::
+
+::::
+
+
+
+
+## Boundary Optimization
+
+:::: {.columns}
+
+::: {.column width='50%'}
+Boundary optimization algorithms, a bit like location optimization - can help you redraw boundaries in a way that is fairer.
+
+They can try out hundreds of thousands of combinations, scoring against metrics like balance of assigned workload across regions, or how much the region differs from an ideal workload per team.
+
+:::
+
+::: {.column width='50%'}
+![](assets/boundary-optimization.png)
+:::
+
+::::
 
 
 ## HSMA Project Showcase - Boundary Optimization for North West Ambulance Service
