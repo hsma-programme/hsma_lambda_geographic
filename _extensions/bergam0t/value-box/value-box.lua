@@ -32,6 +32,12 @@ function Div(el)
     local valign = el.attributes["valign"] or "middle"
     local href      = el.attributes["href"] or ""
     local icon_pos  = el.attributes["icon-position"] or "top" -- "top" | "bottom" | "left" | "right"
+    local font_size = el.attributes["font-size"] or "display:flex"
+    local value_font_size = el.attributes["value-font-size"] or "2.2rem"
+
+    local font_color = el.attributes["font-color"] or "white"
+    local value_color = el.attributes["value-color"] or font_color
+    local icon_color = el.attributes["icon-color"] or "white"
 
     local icon_size_raw = el.attributes["icon-size"]
 
@@ -61,9 +67,11 @@ function Div(el)
     end
 
     -- Flex layout styles for left/right icon positioning
-    local outer_extra_style = ""
-    local icon_extra_style  = ""
-    local details_extra_style = ""
+    local outer_extra_style = el.attributes["outer-extra-style"] or ""
+    local icon_extra_style  = el.attributes["icon-extra-style"] or ""
+    local details_extra_style = el.attributes["details-extra-style"] or ""
+    local value_extra_style = el.attributes["value-extra-style"] or ""
+
     if icon_pos == "left" then
       outer_extra_style  = " display:flex; flex-direction:row; align-items:center; gap:1em;"
       icon_extra_style   = " flex-shrink:0;"
@@ -92,11 +100,11 @@ function Div(el)
     if href ~= "" then
       html_open = string.format(
         '<a href="%s" class="value-box %s%s" style="width:%s; height:%s; text-align:%s; display:block; text-decoration:none; cursor:pointer;%s"%s>',
-        href, color, fragment_class, width, height, align, outer_extra_style, index_data
+        href, color, fragment_class, width, height, align,  outer_extra_style, index_data
       )
     else
       html_open = string.format(
-        '<div class="value-box %s%s" style="width:%s; height:%s; text-align:%s;%s"%s>',
+        '<div class="value-box %s%s" style="width:%s; height:%s; text-align:%s; %s"%s>',
         color, fragment_class, width, height, align, outer_extra_style, index_data
       )
     end
@@ -107,8 +115,8 @@ function Div(el)
       if icon_type == "fa" then
         quarto.doc.include_text("in-header", '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">')
         icon_html = string.format(
-          '<i class="icon %s" style="font-size:%s;%s"></i>',
-          icon, icon_size_font, icon_extra_style
+          '<i class="icon %s" style="font-size:%s;color:%s;%s"></i>',
+          icon, icon_size_font, icon_color, icon_extra_style
         )
 
       elseif icon_type == "svg" then
@@ -139,8 +147,8 @@ function Div(el)
           io.stderr:write(string.format("value-box warning: PNG file not found '%s', falling back to Bootstrap Icons\n", icon))
           quarto.doc.include_text("in-header", '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">')
           icon_html = string.format(
-            '<i class="icon bi %s" style="font-size:%s;%s"></i>',
-            icon, icon_size_font, icon_extra_style
+            '<i class="icon bi %s" style="font-size:%s; color:%s;%s"></i>',
+            icon, icon_size_font, icon_color, icon_extra_style
           )
         end
 
@@ -148,8 +156,8 @@ function Div(el)
         -- Bootstrap Icons (default)
         quarto.doc.include_text("in-header", '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">')
         icon_html = string.format(
-          '<i class="icon bi %s" style="font-size:%s;%s"></i>',
-          icon, icon_size_font, icon_extra_style
+          '<i class="icon bi %s" style="font-size:%s; color:%s;%s"></i>',
+          icon, icon_size_font, icon_color, icon_extra_style
         )
       end
     end
@@ -161,14 +169,21 @@ function Div(el)
 
     -- ADD VALUE (if it exists)
     if value ~= "" then
-      html_open = html_open .. string.format('<div class="value">%s</div>', value)
+      html_open = html_open .. string.format(
+        '<div class="value" style="font-size: %s; color:%s;%s">%s</div>',
+      value_font_size, value_color, value_extra_style,
+        value
+      )
     end
 
     -- Open the details wrapper
     html_open = html_open .. string.format('<div class="details"%s>',
-      details_extra_style ~= "" and string.format(' style="%s"', details_extra_style) or "")
+      string.format(
+        'style="font-size: %s;color:%s;%s"',
+        font_size, font_color, details_extra_style
+      ) or "")
 
-    -- Close details, optionally append icon below, then close outer
+  -- Close details, optionally append icon below, then close outer
     local html_close
     if icon_pos == "bottom" then
       html_close = string.format('</div>%s%s',
