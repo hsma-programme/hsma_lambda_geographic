@@ -290,7 +290,7 @@ Indices of Deprivation - [**real**]{style="color:yellow"} spread
 
 
 
-## Hotspots
+## Hotspots {}
 
 :::: {.columns}
 
@@ -300,7 +300,11 @@ Indices of Deprivation - [**real**]{style="color:yellow"} spread
 problem.plot_region_geometry_layer(plot_demand=True)
 ```
 
+<div style="font-size: 85%">
+
 Choropleths can tell us how a metric (like demand, equity, or incidents) varies.
+
+</div>
 
 :::
 
@@ -313,23 +317,25 @@ Choropleths can tell us how a metric (like demand, equity, or incidents) varies.
 #| label: plot-hotspots
 problem.plot_hotspots(what="demand", figsize=(6, 4))
 ```
-:::
 
+::: {style="font-size: 85%;"}
 But using statistical methods for identifying hotspots, coldspots and outliers can help us identify **significant** patterns.
+:::
 
 :::
 
+:::
 
 ::::
 
 
 ## Data
 
-::: {style="font-size: 50%;"}
+::: {style="font-size: 60%;"}
 
 :::: {.columns}
 
-::: {.column width='70%'}
+::: {.column width='60%'}
 ### National Free Datasets
 - Geographical boundaries at different resolutions
 - Road networks
@@ -343,7 +349,7 @@ But using statistical methods for identifying hotspots, coldspots and outliers c
 - Healthcare indicators (diabetes prevalence, etc.)
 :::
 
-::: {.column width='30%'}
+::: {.column width='40%'}
 ### Locally Held Datasets
 
 - Your demand
@@ -362,10 +368,7 @@ But using statistical methods for identifying hotspots, coldspots and outliers c
 
 :::
 
-::: {.value-box fragment=".fade-in"}
-What else?
-:::
-
+<br>
 
 
 ## Travel Times
@@ -425,8 +428,11 @@ There are two key main ways we can get this data:
 
 :::
 
+
+<div style="font-size: 70%">
 - Free - but only up to a point
 - *Can* give access to more advanced data (e.g. traffic-aware times)
+</div>
 
 :::
 
@@ -435,10 +441,11 @@ There are two key main ways we can get this data:
 
 :::
 
+<div style="font-size: 70%">
 - Totally free, regardless of volume
 - May be slightly less accurate - but often sufficient
 - Often challenges with getting this installed on locked-down NHS laptops
-
+</div>
 :::
 
 ::::
@@ -447,13 +454,14 @@ You may need to help HSMAs get access to one or the other!
 
 ## Isochrones
 
-Travel times open up more plot types, like this:
+
+<div style="font-size: 70%">
+Travel times open up more plot types
+</div>
 
 :::: {.columns}
 
 ::: {.column width='50%'}
-
-### Driving
 
 ```{python}
 #| label: plot-driving-isochrone
@@ -488,7 +496,7 @@ plot_isochrones(
 
 :::: {.columns}
 
-::: {.column width='70%'}
+::: {.column width='60%'}
 
 ```{python}
 #| label: plot-multi-isochrone
@@ -505,7 +513,7 @@ plot_isochrones(
 
 :::
 
-::: {.column width='30%'}
+::: {.column width='40%'}
 
 Layering multiple isochrones is one way we can start to get an idea of where there are areas of poorer access that could be targeted.
 
@@ -518,8 +526,20 @@ Layering multiple isochrones is one way we can start to get an idea of where the
 
 ## Catchment
 
+:::: {.columns}
+
+::: {.column width='50%'}
+<div style="font-size: 80%">
 Taking this one step further, 2SFCA (2 step floating-catchment area) combines both demand and capacity to give a more detailed look at not just where there is **access** (which we define as a particular travel time banding), but where there is sufficient **capacity**.
 
+Being close to a clinic doesn't guarantee you can get seen there — if lots of other people can also reach it, it's effectively less available to you.
+</div>
+:::
+
+
+
+
+::: {.column width='50%'}
 ```{python}
 # label: setup-problem2
 problem2 = SiteProblem()
@@ -547,6 +567,15 @@ problem2.add_travel_matrix(
     unit="minutes"
     )
 
+# The travel matrix doesn't cover all 729 LSOAs in the 2021 boundary file (~24
+# use a different sub-area vintage, e.g. "Torbay 013F"), so restrict demand to
+# LSOAs with actual travel-time coverage -- otherwise get_hotspots() later
+# fails deep inside esda with an opaque weights/data shape mismatch.
+travel_covered_ids = set(problem2.travel_matrix["from_id"])
+problem2.demand_data = problem2.demand_data[
+    problem2.demand_data["LSOA 2021 Name"].isin(travel_covered_ids)
+].reset_index(drop=True)
+
 problem2.add_equity_data(
     "data/devon_imd_2025_2021_LSOAs.csv",
     equity_col="Index of Multiple Deprivation (IMD) Decile (where 1 is most deprived 10% of LSOA",
@@ -566,28 +595,46 @@ problem2.add_region_geometry_layer(region_geo, common_col="LSOA 2021 Name")
 # label: plot-2sfca
 fig = problem2.plot_accessibility(
     supply_col="appointments_per_year",
-    catchment_size=30
+    catchment_size=30,
+    figsize=(7,7),
+    site_color="yellow"
     )
 ```
+:::
+
+::::
+
+
+
 
 
 ## Catchment
 
+
 :::: {.columns}
 
 ::: {.column width='50%'}
-```{python}
-#| label: output-2sfca-plot
-fig
-```
+
+### Step 1: How stretched is each facility?
+
+Compare what a facility can offer (e.g. 8,000 appointments a year) against how many people could realistically reach it.
+
+This gives a "supply per person" score for that facility — low score = oversubscribed, high score = spare capacity.
+
 :::
 
 ::: {.column width='50%'}
 
-- **Step 1:** Calculate supply to demand ratio per facility
-    - e.g. a facility can support 500 appointments per year, but
+:::{.fragment}
 
-- **Step 2:** Sum up the supply:demand ratio for facilities each region has access to
+### Step 2: How much real access does each area have?
+
+For each area, add up the "supply per person" scores of every facility it's within reach of.
+
+Areas near several well-resourced facilities score well; areas that only reach one crowded facility score poorly — even if the raw travel time looks fine.
+
+:::
+
 :::
 
 ::::
@@ -595,21 +642,24 @@ fig
 
 ## And more kinds of hotspots!
 
+We can combine travel data to identify high priority areas, like high deprivation and long journey times.
+
 ```{python}
 #| label: solve-problem-2
+#| include: false
 solution = problem2.solve(p=15)
 ```
 
 ```{python}
 #| label: plot-quadrant-map
-solution.get_hotspots(what="travel_equity")
-# solution.plot_quadrant_map()
+# solution.get_hotspots(what="travel_equity")
+solution.plot_quadrant_map(what="travel_equity", figsize=(7,7))
 ```
 
 
-## Exercise
+## Quick Discussion
 
-- How do you make use of maps in your organisation? Which of these don't you recognise?
+- How do you make use of maps in your organisation? Which of these are new to you?
 
 - How much do you think geography matters to your organisation?
 
