@@ -74,24 +74,24 @@ I need to work out where to put a *load* of sites where none currently 'exist'
 
 ## Why can't we just eyeball it?
 
-Let's imagine you've got 15 candidate sites, and you need to open some.
+Let's imagine you've got 14 candidate sites, and you need to open some.
 
 :::: {.columns}
 
 ::: {.column width='33%'}
-::: {.value-box value="15" fragment="fade-in"}
+::: {.value-box value="14" fragment="fade-in"}
 Options to weigh up when opening 1 site.
 :::
 :::
 
 ::: {.column width='33%'}
-::: {.value-box value="105" fragment="fade-in"}
+::: {.value-box value="91" fragment="fade-in"}
 Options to weigh up when opening 2 sites.
 :::
 :::
 
 ::: {.column width='33%'}
-::: {.value-box value="455" fragment="fade-in"}
+::: {.value-box value="364" fragment="fade-in"}
 Options to weigh up when opening 3 sites.
 :::
 :::
@@ -101,19 +101,19 @@ Options to weigh up when opening 3 sites.
 :::: {.columns}
 
 ::: {.column width='33%'}
-::: {.value-box value="1365" fragment="fade-in"}
+::: {.value-box value="1001" fragment="fade-in"}
 Options to weigh up when opening 4 sites.
 :::
 :::
 
 ::: {.column width='33%'}
-::: {.value-box value="3003" fragment="fade-in"}
+::: {.value-box value="2002" fragment="fade-in"}
 Options to weigh up when opening 5 sites.
 :::
 :::
 
 ::: {.column width='33%'}
-::: {.value-box value="5005" fragment="fade-in"}
+::: {.value-box value="3003" fragment="fade-in"}
 Options to weigh up when opening 6 sites.
 :::
 :::
@@ -148,18 +148,22 @@ The most people **within 30 minutes**?
 :::: {.columns}
 
 ::: {.column width='50%'}
-::: {.value-box icon="bi bi-bar-chart-fill" fragment="fade-in" icon-position="left"}
-The best access for the **most deprived** areas?
+::: {.value-box icon="bi bi-exclamation-triangle-fill" fragment="fade-in" icon-position="left"}
+The shortest **worst-case journey**?
 :::
 :::
 
 ::: {.column width='50%'}
-::: {.value-box icon="bi bi-sliders" fragment="fade-in" icon-position="left"}
-The most **even workload** across sites?
+::: {.value-box icon="bi bi-bar-chart-fill" fragment="fade-in" icon-position="left"}
+The shortest journeys for the **most deprived third**?
 :::
 :::
 
 ::::
+
+::: {.value-box icon="bi bi-arrows-collapse" fragment="fade-in" icon-position="left" width="100%"}
+The **narrowest gap** between the most and least deprived?
+:::
 
 ::: {.fragment}
 

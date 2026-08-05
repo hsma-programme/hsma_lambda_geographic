@@ -615,7 +615,7 @@ fig = problem2.plot_accessibility(
 
 ::: {.column width='50%'}
 
-<div style="font-size: 80%">
+::: {style="font-size: 80%;"}
 
 ### Step 1: How stretched is each facility?
 
