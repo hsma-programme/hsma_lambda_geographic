@@ -1,14 +1,74 @@
 # Other Techniques
 
-There are a few things we don't teach and directly support on HSMA, but that HSMAs may be able to build up to using their foundation.
+There are a few things we don't teach and directly support on HSMA, but that HSMAs may be able to build up to using their geographic foundations.
+
+We can support projects in these areas - but be aware that we might be bit more limited in the depth of advice we can provide.
 
 
 ## Routing and Scheduling
 
+:::: {.columns}
+
+::: {.column width='50%'}
+![](assets/delivery_driver.jpg)
+:::
+
+::: {.column width='50%'}
+Most of us primarily encounter routing and scheduling in the context of parcel deliveries!
+
+But there are potential applications in health data science projects too.
+:::
+
+::::
+
+## Efficient Routes
+
+:::: {.columns}
+
+::: {.column width='50%'}
+
+You may have heard of the 'travelling salesman problem' - where the goal is to find the most efficient route between a series of points.
+
+This is actually a hard problem for computers to solve as the number of points increases - and even more so when you expand it to multiple vehicles (e.g. community nurses) with constraints (e.g. patient continuity, different skill mixes).
+
+:::
+
+::: {.column width='50%'}
+![](assets/delivery_driver_efficient_inefficient.jpg)
+:::
+
+::::
+
+
+## Dos and Don'ts of Routing Projects
+
+While you *could* set up a project that will route your community nurses efficiently every day - we'd advise against it.
+
+These kinds of tools are deceptively complex, particularly to ensure they run day in, day out.
+
+This is one of the few places we would say 'leave it to the software comparies'.
+
+But routing and scheduling can still have a place in service improvement projects!
+
+Maybe you want to look at the value of moving some of your patient transport vehicles, or adding another one.
+
+Routing often pairs well with simulation for this kind of purpose - a technique we teach in another of our lambda workshops, and which students also learn on HSMA.
 
 
 ## PenCHORD Project Showcase - Dialysis Transport during COVID-19
 
+This PenCHORD project was tasked with making sure dialysis transport could continue safely and efficiently during the COVID-19 Pandemic.
+
+![](assets/routing_dialysis.png)
+
+By combining simulation of patient disease status with routing, they were able to show the impact of different patients-per-vehicle limits on overall driving time required.
+
+
+## PenCHORD Project Showcase - Dialysis Transport during COVID-19
+
+Modelling multiple disease spread scenarios, they were able to show a significant reduction in travel hours required by relaxing policies to allow two patients to travel in the same vehicle simultaneously, balancing infection control needs with limited resource and essential treatments.
+
+![](assets/pone.0237628.g006.png)
 
 
 
