@@ -18,15 +18,35 @@ Before we introduce ourselves, let’s take a bit of time to hear from you:
 
 ::::
 
-## A few questions...
+## A few quick questions...
 
-<div style='position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden;'><iframe sandbox='allow-popups allow-scripts allow-same-origin allow-presentation' allowfullscreen='true' allowtransparency='true' frameborder='0' height='315' src='https://www.mentimeter.com/app/presentation/aluunihvprf397pddmjcqf1ypxk449or/embed' style='position: absolute; top: 0; left: 0; width: 100%; height: 500px;' width='420'></iframe></div>
+<div style='position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden;'><iframe sandbox='allow-popups allow-scripts allow-same-origin allow-presentation' allowfullscreen='true' allowtransparency='true' frameborder='0' height='575' width='520' src='https://www.mentimeter.com/app/presentation/aluunihvprf397pddmjcqf1ypxk449or/embed' style='position: absolute; top: 0; left: 0; width: 100%; height: 575px;'></iframe></div>
+
+
+## Who do I work for?
+<br>
+
+::: {.fragment .fade-in-then-semi-out}
+![](assets/nihr_logo.png)
+:::
+
+:::{.focus-list}
+- National partnerships between academia and NHS
+- Undertake collaborative, **applied** research
+- We sit across the Universities of Exeter, Plymouth and Bristol
+:::
+
+::: {.value-box align="center" style="font-size: 5rem;" fragment=".fade-in"}
+We are measured on the **impact** we generate
+:::
 
 ## Who am I?
 
 :::: {.columns}
 
 ::: {.column width='40%'}
+
+![](assets/Gemini_Generated_Image_8neqeb8neqeb8neq.png)
 
 :::
 
@@ -37,6 +57,7 @@ Before we introduce ourselves, let’s take a bit of time to hear from you:
 - MSc health data science, 2021
 - Postdoctoral research fellow for 3 years
 - Author of software for simulation visualisation and geographic optimization
+- Trainer on the core HSMA programme
 :::
 
 :::
@@ -44,21 +65,9 @@ Before we introduce ourselves, let’s take a bit of time to hear from you:
 ::::
 
 
-## A bit about PenARC
-
-![](assets/nihr_logo.png)
-
-:::{.focus-list}
-- NIHR Applied Research Collaboration (ARC) for the South West
-- National partnerships between academia and NHS
-- Undertake collaborative, applied research that makes a real impact
-    - Measured on the impact we generate
-- We sit across the Universities of Exeter, Plymouth and Bristol
-:::
-
 ## What is HSMA?
 
-The **Health Service Modelling Associates (HSMA) Programme**
+The **Health Service Modelling Associates (HSMA) Programme** aims to grow advanced data science and modelling capacity in healthcare services.
 
 ::: {.fragment .fade-in}
 1 day a week for 15 months
@@ -105,7 +114,7 @@ Apply skills to a project of importance for their organisation with mentoring an
 ::: {.column width='50%'}
 
 ::: {.value-box fragment=".fade-in" icon="fa-solid fa-sterling-sign" align="center"}
-Offered **free of charge**
+The full programme is offered **free of charge**
 :::
 
 :::

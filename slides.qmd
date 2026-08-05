@@ -64,6 +64,8 @@ filters:
 
 {{< include _intro-or-ds-concepts.qmd >}}
 
+{{< include _des_vs_geographic.qmd >}}
+
 {{< include _geographic-key-concepts.qmd >}}
 
 {{< include _geographic-intro-exercise.qmd >}}

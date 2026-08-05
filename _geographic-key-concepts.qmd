@@ -2,123 +2,144 @@
 
 Before we talk too much about the impressive things we can do with geographic data science, we need to cover some fundamentals.
 
-## A Note Before we Proceed
+## The power of maps
 
-In our other lambda workshop, we teach Discrete Event Simulation (DES)
-
-This is a powerful technique for building models of queues and pathways - like elective waiting list, hospital theatres, emergency departments, and more.
-
-
-## A Mental Model for DES
+In recent years, we've experienced the power of the digital mapping revolution.
 
 :::: {.columns}
 
-::: {.column width='50%'}
+::: {.column width='70%'}
 
-Discrete Event Simulation is like Lego
-
-We give you a few bricks - the core components of discrete event simulation - and suddenly you can build pretty much anything you can imagine
+![](assets\2026-08-04-09-53-40.png)
 
 :::
 
-::: {.column width='50%'}
+::: {.column width='30%'}
 
-![](assets/des-lego.png){height=500px}
+It's now entirely normal to us that we can generate routes in seconds, with accurate travel times, traffic data, points of interest...
 
 :::
 
 ::::
 
-## A Mental Model for Geographic
+## Placeholder
+
+But are we reaping the benefits of this digital mapping revolution in NHS analytics and service planning yet?
+
+## The past...
+
+
 
 :::: {.columns}
 
-::: {.column width='50%'}
+::: {.column width='30%'}
 
-Geographic modelling is more like getting into DIY and buying yourself an empty toolbox.
-
-You start with your core geographic knowledge and map building skills.
-
-This is your hammer.
-
+This was revolutionary!
 
 :::
 
-::: {.column width='50%'}
+::: {.column width='70%'}
 
-![](assets/toolbox.png){height=500px}
+![](assets/UKLSE_DL1_CB01_004_001_0032_0001_crop.png){.lightbox height=600}
 
 :::
 
 ::::
 
-## DES vs Geographic
+
+## Maps
+
+The digital age makes it possible to use and obtain rich geographic data, and make maps
 
 :::: {.columns}
 
-::: {.column width='50%'}
-
-And it will take time to build up your collection of tools…
-
-But HSMA gets people started with some really powerful techniques that can help with data-driven decision making.
+::: {.column width='33%'}
+::: {.value-box icon="fa-solid fa-forward-fast"}
+(More) quickly
+:::
 
 :::
 
-::: {.column width='50%'}
+::: {.column width='33%'}
+::: {.value-box icon="fa-solid fa-robot"}
+Routinely / in automated reports
+:::
 
-![](assets/tool-collection.png){height=500px}
+:::
 
+::: {.column width='33%'}
+::: {.value-box icon="fa-solid arrow-pointer"}
+Interactively (where appropriate)
+:::
 :::
 
 ::::
 
-## {.slide data-menu-title='Our Approach to Geographic Modelling'}
 
-While we can’t teach students to solve **every** geographic problem, we help them
+## Kinds of Maps and Geographic data
 
-:::{.incremental}
-- Fill their toolkit with the core tools they’ll need again and again
-    - geographic concepts, map making, travel time matrix generation, automated reporting, web apps
-- Add in some fancy tools for certain kinds of problems (location optimization)
-- Understand where to go to get a new tool when they need it
-    - Or use their other tools to build a super-tool!
+But you might not have thought much about the different kind of maps that exist since you last did a geography lesson at school!
+
+::: {.value-box align="center" font-size="200%"}
+Knowing what's possible helps you to request the right analyses and critically analyse what is produced.
 :::
 
+This forms a crucial lens for evaluating more advanced location work.
 
-## Point Maps
+## Point Maps {.nostretch}
 
-:::: {.columns}
+<div style="font-size: 65%">
 
-::: {.column width='50%'}
-Point maps tell us where useful things are
+Point maps tell us where useful things are, like existing resources (hospitals, GP surgeries).
 
-- Existing resources (hospitals, GP surgeries)
-:::
+</div>
 
-::: {.column width='50%'}
-
+::: {.map-container style="height: 450px; width: 100%;"}
 ```{python}
+#| label: simple-point-map
 from lokigi.site import SiteProblem
+import folium
 
 problem_simplest = SiteProblem()
-problem_simplest.add_sites("data/devon_mius.geojson", candidate_id_col="Facility_Name")
+problem_simplest.add_sites("data/devon_healthcare_facilities.csv", candidate_id_col="Facility_Name", horizontal_geometry_col="Longitude", vertical_geometry_col="Latitude", crs="EPSG:4326")
 problem_simplest.add_region_geometry_layer("data/LSOA_Devon_2021_EW_BSC_V4.gpkg", common_col="LSOA21NM")
 
-```
+fig = folium.Figure(height=550)
+m = folium.Map(
+    location=[50.75, -3.75], zoom_start=9, tiles="CartoDB Positron"
+).add_to(fig)
 
-```{python}
-problem_simplest.plot_sites()
+problem_simplest.plot_sites(interactive=True, m=m)
 ```
-
 :::
 
-::::
+## Point Maps - Enhancements {.nostretch}
+
+<div style="font-size: 65%">
+And we can do quite a lot with them to make them more useful!
+</div>
+
+
+```{python}
+#| echo: false
+#| output: true
+#| label: fancy-point-map
+from plotting_helpers import fancy_point_map
+fancy_point_map(problem_simplest, height=600)
+```
+
 
 
 
 ## Choropleths
 
+<div style="font-size: 65%">
+Choropleths allow us to understand statistics about areas.
+</div>
+
+
 ```{python}
+#| label: setup-main-problem
 problem = SiteProblem()
 problem.add_sites("data/devon_mius.geojson", candidate_id_col="Facility_Name")
 problem.add_region_geometry_layer("data/LSOA_Devon_2021_EW_BSC_V4.gpkg", common_col="LSOA21NM")
@@ -135,26 +156,60 @@ problem.add_equity_data(
     )
 ```
 
-Choropleths tell us things about areas
-
 ```{python}
-problem.plot_region_geometry_layer(plot_demand=True, interactive=True, cmap="viridis")
+#| label: plot-choropleth
+fig = folium.Figure(height=550)
+m = folium.Map(
+    location=[50.75, -3.75], zoom_start=9, tiles="CartoDB Positron"
+).add_to(fig)
+problem.plot_region_geometry_layer(plot_demand=True, interactive=True, cmap="viridis", m=m)
 ```
 
+## Choropleths + Points
 
+<div style="font-size: 65%">
+And one of the most powerful things we can do is combine the two!
+</div>
+
+```{python}
+#| label: plot-choropleth-and-points
+fig = folium.Figure(height=550)
+m = folium.Map(
+    location=[50.75, -3.75], zoom_start=9, tiles="CartoDB Positron"
+).add_to(fig)
+m = problem.plot_region_geometry_layer(plot_equity=True, interactive=True, cmap="viridis", m=m, linewidth=0.3)
+
+for row in problem.candidate_sites.copy().to_crs("EPSG:4326").itertuples():
+    folium.Marker(
+        location=[row.geometry.y, row.geometry.x],
+        popup=row.Facility_Name,
+        tooltip=row.Facility_Name,
+        icon=folium.Icon(
+            color="red",
+            icon="hospital-o",
+            prefix="fa"
+        ),
+    ).add_to(m)
+
+m
+```
 
 
 ## Tobler's First Law
 
+<div style="font-size: 85%">
+But to interpret things about areas correctly, we need to consider this key geographic principle from the one of the most influential geographer's of the 20th century, Waldo Tobler.
+</div>
+
 :::: {.columns}
 
-::: {.column width='50%'}
-![](assets/tobler_ChatGPT.png)
+::: {.column width='40%'}
+![](assets/tobler_ChatGPT.png){height=400}
 :::
 
-::: {.column width='50%'}
+::: {.column width='60%'}
 
-::: {.value-box align="center"}
+::: {.value-box align="center" font-size="130%"}
 Everything is related to everything else,\n
 but near things are more related than distant things
 :::
@@ -168,6 +223,8 @@ but near things are more related than distant things
 
 ## Tobler's First Law in Action
 
+What does this mean in practice?
+
 :::: {.columns}
 
 ::: {.column width='50%'}
@@ -175,6 +232,7 @@ but near things are more related than distant things
 :::{.fragment}
 
 ```{python}
+#| label: plot-randomised-imd
 problem_randomised = problem.copy()
 
 problem_randomised.equity_data
@@ -197,6 +255,7 @@ ax = problem_randomised.plot_region_geometry_layer(plot_equity=True, interactive
 :::{.fragment}
 
 ```{python}
+#| label: plot-true-imd
 ax = problem.plot_region_geometry_layer(plot_equity=True, interactive=False)
 ```
 
@@ -237,6 +296,7 @@ Indices of Deprivation - [**real**]{style="color:yellow"} spread
 
 ::: {.column width='50%'}
 ```{python}
+#| label: plot-demand-simple-comparison-hotpots
 problem.plot_region_geometry_layer(plot_demand=True)
 ```
 
@@ -250,17 +310,17 @@ Choropleths can tell us how a metric (like demand, equity, or incidents) varies.
 ::: {.column width='50%'}
 ::: {.fragment}
 ```{python}
-problem.plot_hotspots(what="demand")
+#| label: plot-hotspots
+problem.plot_hotspots(what="demand", figsize=(6, 4))
 ```
 :::
+
+But using statistical methods for identifying hotspots, coldspots and outliers can help us identify **significant** patterns.
+
 :::
 
-But using statistical methods for identifying hotspots, coldspots and outliers can help us identify significant patterns.
 
 ::::
-
-
-
 
 
 ## Data
@@ -310,16 +370,16 @@ What else?
 
 ## Travel Times
 
+Most of our more complex uses of geographic data require some sort of travel data.
 
+But what level of detail do we need?
 
 ## Travel Times - Good Enough?
 
 ```{python}
+#| label: plot-route-comparison-plymouth
 from plotting_helpers import plot_route_comparison
-```
 
-
-```{python}
 # WGS84 coordinates
 cullompton = (-3.3924, 50.8588)
 plymouth = (-4.1427, 50.3755)
@@ -331,12 +391,14 @@ fig, axes = plot_route_comparison(
     end_name="Plymouth",
     road_route="data/cullompton_plymouth.geojson",
     units="miles",
+    figsize=(12,6)
 )
 ```
 
 ## Travel Times - Limitations
 
 ```{python}
+#| label: plot-route-comparison-cardiff
 # WGS84 coordinates
 cardiff = (-3.1678090091493956, 51.484651426319466)
 
@@ -347,20 +409,45 @@ fig, axes = plot_route_comparison(
     end_name="Cardiff",
     road_route="data/cullompton_cardiff.geojson",
     units="miles",
+    figsize=(12,6)
 )
 ```
 
 
 ## Obtaining Travel Data
 
+There are two key main ways we can get this data:
 
+:::: {.columns}
 
+::: {.column width='50%'}
+::: {.value-box value="Web-based" icon="fa-solid fa-cloud"}
+
+:::
+
+- Free - but only up to a point
+- *Can* give access to more advanced data (e.g. traffic-aware times)
+
+:::
+
+::: {.column width='50%'}
+::: {.value-box value="Local" icon="fa-solid fa-laptop"}
+
+:::
+
+- Totally free, regardless of volume
+- May be slightly less accurate - but often sufficient
+- Often challenges with getting this installed on locked-down NHS laptops
+
+:::
+
+::::
+
+You may need to help HSMAs get access to one or the other!
 
 ## Isochrones
 
-```{python}
-from plotting_helpers import plot_isochrones
-```
+Travel times open up more plot types, like this:
 
 :::: {.columns}
 
@@ -369,6 +456,9 @@ from plotting_helpers import plot_isochrones
 ### Driving
 
 ```{python}
+#| label: plot-driving-isochrone
+from plotting_helpers import plot_isochrones
+
 fig = plot_isochrones(
     (-3.3924, 50.8588),
     mode="auto",
@@ -381,6 +471,7 @@ fig = plot_isochrones(
 ::: {.column width='50%'}
 
 ```{python}
+#| label: plot-walking-isochrone
 plot_isochrones(
     (-3.3924, 50.8588),
     mode="pedestrian",
@@ -400,6 +491,7 @@ plot_isochrones(
 ::: {.column width='70%'}
 
 ```{python}
+#| label: plot-multi-isochrone
 import geopandas
 devon_mius = geopandas.read_file("data/devon_mius.geojson")
 
@@ -426,11 +518,11 @@ Layering multiple isochrones is one way we can start to get an idea of where the
 
 ## Catchment
 
-Taking this one step further, 2SFCA (2 step floating-catchment area) combines both demand and capacity to give a more detailed look at not just where there is access, but where there is sufficient capacity.
+Taking this one step further, 2SFCA (2 step floating-catchment area) combines both demand and capacity to give a more detailed look at not just where there is **access** (which we define as a particular travel time banding), but where there is sufficient **capacity**.
 
 ```{python}
-import geopandas
-problem2 = problem.copy()
+# label: setup-problem2
+problem2 = SiteProblem()
 
 problem2.add_demand(
     "data/demand_MF_50_84.csv",
@@ -448,7 +540,6 @@ problem2.add_sites(
     devon_mius_gdf,
     candidate_id_col="Facility_Name"
     )
-# problem2.show_sites()
 
 problem2.add_travel_matrix(
     "data/devon_miu_travel_matrix.csv",
@@ -456,6 +547,23 @@ problem2.add_travel_matrix(
     unit="minutes"
     )
 
+problem2.add_equity_data(
+    "data/devon_imd_2025_2021_LSOAs.csv",
+    equity_col="Index of Multiple Deprivation (IMD) Decile (where 1 is most deprived 10% of LSOA",
+    common_col="LSOA name (2021)",
+    label="Indices of Multiple Deprivation",
+    continuous_measure=True,
+    reverse=False
+    )
+
+region_geo = geopandas.read_file("data/LSOA_Devon_2021_EW_BSC_V4.gpkg").rename(columns={"LSOA21NM": "LSOA 2021 Name"})
+
+problem2.add_region_geometry_layer(region_geo, common_col="LSOA 2021 Name")
+
+```
+
+```{python}
+# label: plot-2sfca
 fig = problem2.plot_accessibility(
     supply_col="appointments_per_year",
     catchment_size=30
@@ -469,6 +577,7 @@ fig = problem2.plot_accessibility(
 
 ::: {.column width='50%'}
 ```{python}
+#| label: output-2sfca-plot
 fig
 ```
 :::
@@ -483,6 +592,19 @@ fig
 
 ::::
 
+
+## And more kinds of hotspots!
+
+```{python}
+#| label: solve-problem-2
+solution = problem2.solve(p=15)
+```
+
+```{python}
+#| label: plot-quadrant-map
+solution.get_hotspots(what="travel_equity")
+# solution.plot_quadrant_map()
+```
 
 
 ## Exercise

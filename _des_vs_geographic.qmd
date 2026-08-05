@@ -1,0 +1,81 @@
+## A Note Before we Proceed
+
+In our other lambda workshop, we teach Discrete Event Simulation (DES)
+
+This is a powerful technique for building models of queues and pathways - like elective waiting list, hospital theatres, emergency departments, and more.
+
+
+## A Mental Model for DES
+
+:::: {.columns}
+
+::: {.column width='50%'}
+
+Discrete Event Simulation is like Lego
+
+We give you a few bricks - the core components of discrete event simulation - and suddenly you can build pretty much anything you can imagine
+
+:::
+
+::: {.column width='50%'}
+
+![](assets/des-lego.png){height=500px}
+
+:::
+
+::::
+
+## A Mental Model for Geographic
+
+:::: {.columns}
+
+::: {.column width='50%'}
+
+Geographic modelling is more like getting into DIY and buying yourself an empty toolbox.
+
+You start with your core geographic knowledge and map building skills.
+
+This is your hammer.
+
+
+:::
+
+::: {.column width='50%'}
+
+![](assets/toolbox.png){height=500px}
+
+:::
+
+::::
+
+## DES vs Geographic
+
+:::: {.columns}
+
+::: {.column width='50%'}
+
+And it will take time to build up your collection of tools…
+
+But HSMA gets people started with some really powerful techniques that can help with data-driven decision making.
+
+:::
+
+::: {.column width='50%'}
+
+![](assets/tool-collection.png){height=500px}
+
+:::
+
+::::
+
+## {.slide data-menu-title='Our Approach to Geographic Modelling'}
+
+While we can’t teach students to solve **every** geographic problem, we help them
+
+:::{.incremental}
+- Fill their toolkit with the core tools they’ll need again and again
+    - geographic concepts, map making, travel time matrix generation, automated reporting, web apps
+- Add in some fancy tools for certain kinds of problems (location optimization)
+- Understand where to go to get a new tool when they need it
+    - Or use their other tools to build a super-tool!
+:::
