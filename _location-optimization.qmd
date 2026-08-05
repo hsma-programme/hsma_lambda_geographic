@@ -1,8 +1,32 @@
 # Location Optimization
 
-## Hitting the big time
+## {.slide data-menu-title="Remember this question?"}
 
-After we teach HSMAs to do all this lovely mapping and data stuff, we move them onto their first power tool - location optimization.
+:::: {.columns}
+
+::: {.column width='55%'}
+
+Remember this one?
+
+::: {.value-box icon="bi bi-hospital" align="center" icon-size="1.5em"}
+What if we opened a new site here?
+:::
+
+::: {.fragment}
+**Location optimization** is how we answer it properly.
+
+It's the first power tool we hand HSMAs once they've got the mapping fundamentals.
+:::
+
+:::
+
+::: {.column width='45%'}
+
+![](assets/meeples.png)
+
+:::
+
+::::
 
 
 ## Flavours of Location Problem
@@ -13,8 +37,10 @@ Many geographic problems come down to one of these three things:
 
 ::: {.column width='33%'}
 
-::: {.value-box value="Expansion"}
+::: {.value-box value="Expansion"  icon-position="top" align="center" icon="fa-solid fa-circle-plus"}
 "I need to **add** a site"
+
+*Where should our new community diagnostic centre go?*
 
 :::
 
@@ -22,19 +48,23 @@ Many geographic problems come down to one of these three things:
 
 ::: {.column width='33%'}
 
-::: {.value-box value="Consolidation"}
+::: {.value-box value="Consolidation" icon-position="top" align="center" icon="fa-solid fa-circle-minus"}
 
 I need to **remove** a site
 
-:::
+*Which of our sites do we close when the estate has to shrink?*
 
 :::
 
-::: {.column width='33%'}
+:::
+
+::: {.column width='33%' icon-position="top" align="center" icon="fa-brands fa-connectdevelop"}
 
 ::: {.value-box value="Network Design"}
 
 I need to work out where to put a *load* of sites where none currently 'exist'
+
+*Where do all the vaccination centres go?*
 :::
 
 :::
@@ -42,41 +72,27 @@ I need to work out where to put a *load* of sites where none currently 'exist'
 ::::
 
 
-## That's complex
+## Why can't we just eyeball it?
+
+Let's imagine you've got 15 candidate sites, and you need to open some.
 
 :::: {.columns}
 
-::: {.column width='50%'}
-![](/assets/meeples.png)
-:::
-
-::: {.column width='50%'}
-
-:::
-
-::::
-
-## Why is it complex?
-
-Let's imagine you've got 15 sites and you need to close some.
-
-:::: {.columns}
-
-::: {.column width='33%' fragment=".fade-in"}
-::: {.value-box value="15"}
-Solutions to evaluate when closing 1 site.
+::: {.column width='33%'}
+::: {.value-box value="15" fragment="fade-in"}
+Options to weigh up when opening 1 site.
 :::
 :::
 
-::: {.column width='33%'  fragment=".fade-in"}
-::: {.value-box value="105"}
-Solutions to evaluate when closing 2 sites.
+::: {.column width='33%'}
+::: {.value-box value="105" fragment="fade-in"}
+Options to weigh up when opening 2 sites.
 :::
 :::
 
-::: {.column width='33%' fragment=".fade-in"}
-::: {.value-box value="455"}
-Solutions to evaluate when closing 3 sites.
+::: {.column width='33%'}
+::: {.value-box value="455" fragment="fade-in"}
+Options to weigh up when opening 3 sites.
 :::
 :::
 
@@ -84,34 +100,72 @@ Solutions to evaluate when closing 3 sites.
 
 :::: {.columns}
 
-::: {.column width='33%' fragment=".fade-in"}
-::: {.value-box value="1365"}
-Solutions to evaluate when closing 4 sites.
+::: {.column width='33%'}
+::: {.value-box value="1365" fragment="fade-in"}
+Options to weigh up when opening 4 sites.
 :::
 :::
 
-::: {.column width='33%' fragment=".fade-in"}
-::: {.value-box value="3003"}
-Solutions to evaluate when closing 5 sites.
+::: {.column width='33%'}
+::: {.value-box value="3003" fragment="fade-in"}
+Options to weigh up when opening 5 sites.
 :::
 :::
 
-::: {.column width='33%' fragment=".fade-in"}
-::: {.value-box value="5005"}
-Solutions to evaluate when closing 6 sites.
+::: {.column width='33%'}
+::: {.value-box value="5005" fragment="fade-in"}
+Options to weigh up when opening 6 sites.
 :::
 :::
 
 ::::
 
-
-## A better way?
-
-::: {.value-box}
+::: {.fragment}
 **Location Optimization** is a branch of operational research that allows us to evaluate and rank these combinations
 :::
 
 
+## Best at what?
+
+Before it can rank anything, the model has to be told what "best" means.
+
+:::: {.columns}
+
+::: {.column width='50%'}
+::: {.value-box icon="bi bi-clock-fill" fragment="fade-in" icon-position="left"}
+The shortest **average journey**?
+:::
+:::
+
+::: {.column width='50%'}
+::: {.value-box icon="bi bi-people-fill" fragment="fade-in" icon-position="left"}
+The most people **within 30 minutes**?
+:::
+:::
+
+::::
+
+:::: {.columns}
+
+::: {.column width='50%'}
+::: {.value-box icon="bi bi-bar-chart-fill" fragment="fade-in" icon-position="left"}
+The best access for the **most deprived** areas?
+:::
+:::
+
+::: {.column width='50%'}
+::: {.value-box icon="bi bi-sliders" fragment="fade-in" icon-position="left"}
+The most **even workload** across sites?
+:::
+:::
+
+::::
+
+::: {.fragment}
+
+The model doesn't decide which of these matters. [**You**]{style="color:yellow"} do.
+
+:::
 
 
 ## Decision *Support*, not Decisions
@@ -124,9 +178,12 @@ It's just more robust evidence to add to
 
 - system knowledge
 - patient feedback
+- what's actually deliverable
 
-::: {.value-box value="Assumptions in, answers out"}
+::: {.value-box fragment="fade-in"}
 
-The model is only as fair as the objectives **you** choose
+The best site on paper might be the one you can't build on.
+
+And once a service opens, demand you never knew about can appear.
 
 :::

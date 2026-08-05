@@ -1,5 +1,27 @@
 # Geographic Showcase
 
+## What now?
+
+:::: {.columns}
+
+::: {.column width='50%'}
+
+We're on the home stretch now!
+
+Before we get you coming up with your own questions for potential HSMA's from your organisations, let's first look over some of the previous geographic projects HSMAs have taken on, ranging from the simple yet impactful to the complex.
+
+:::
+
+::: {.column width='50%'}
+
+```{=html}
+<iframe width='780' height='500' src='https://hsma.co.uk/previous_projects/projects_by_methods.html#mapping-and-location-optimisation' title='HSMA Projects Page'></iframe>
+```
+
+:::
+
+::::
+
 
 ## Mapping of Hospice Demand and Assets
 
@@ -19,7 +41,7 @@
 This project focussed on **Reducing Travel Times to Treatment for Cardiac Patients in the South East of England**
 
 ```{=html}
-<iframe width='780' height='500' src='https://hsma4cardiac.streamlit.app/Kent_and_Medway_Travel_Times' title='HSMA 4 Cardiac App'></iframe>
+<iframe width='780' height='500' src='https://hsma4cardiac.streamlit.app/Kent_and_Medway_Travel_Times?embed=true' title='HSMA 4 Cardiac App'></iframe>
 ```
 
 

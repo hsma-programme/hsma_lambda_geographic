@@ -21,7 +21,7 @@ You have been told to prioritise access for those aged 50-84, and for those in m
 
 ::: {.column width='50%'}
 
-::: {.value-box}
+::: {.value-box icon="fa-solid fa-magnifying-glass"}
 
 Take the time to explore the maps.
 
@@ -29,7 +29,7 @@ Take the time to explore the maps.
 
 :::
 
-::: {.column width='50%'}
+::: {.column width='50%' icon="fa-solid fa-lightbulb"}
 
 ::: {.value-box}
 
@@ -40,6 +40,9 @@ Don't worry about getting the "right" answer.
 :::
 
 ::::
+
+
+## Debrief
 
 
 

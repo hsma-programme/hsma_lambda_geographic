@@ -597,7 +597,7 @@ fig = problem2.plot_accessibility(
     supply_col="appointments_per_year",
     catchment_size=30,
     figsize=(7,7),
-    site_color="yellow"
+    site_colour="yellow"
     )
 ```
 :::
@@ -615,6 +615,8 @@ fig = problem2.plot_accessibility(
 
 ::: {.column width='50%'}
 
+<div style="font-size: 80%">
+
 ### Step 1: How stretched is each facility?
 
 Compare what a facility can offer (e.g. 8,000 appointments a year) against how many people could realistically reach it.
@@ -623,9 +625,11 @@ This gives a "supply per person" score for that facility — low score = oversub
 
 :::
 
+:::
+
 ::: {.column width='50%'}
 
-:::{.fragment}
+:::{.fragment style="font-size: 80%;"}
 
 ### Step 2: How much real access does each area have?
 
@@ -655,12 +659,3 @@ solution = problem2.solve(p=15)
 # solution.get_hotspots(what="travel_equity")
 solution.plot_quadrant_map(what="travel_equity", figsize=(7,7))
 ```
-
-
-## Quick Discussion
-
-- How do you make use of maps in your organisation? Which of these are new to you?
-
-- How much do you think geography matters to your organisation?
-
-- How does geography currently play into decisions?
