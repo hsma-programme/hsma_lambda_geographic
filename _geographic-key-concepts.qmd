@@ -194,6 +194,10 @@ for row in problem.candidate_sites.copy().to_crs("EPSG:4326").itertuples():
 m
 ```
 
+::: {style="font-size: 65%;"}
+Just from this map — where would **you** put a new centre? Answer anonymously in the poll.
+:::
+
 
 ## Tobler's First Law
 
@@ -223,13 +227,17 @@ but near things are more related than distant things
 
 ## Tobler's First Law in Action
 
-What does this mean in practice?
+What does this mean in practice? Two maps of the same nine deprivation deciles across Devon — one is the real pattern, one is the same values shuffled randomly across the same areas.
+
+::: {style="font-size: 85%;"}
+Which is real — left or right? Vote in the poll.
+:::
 
 :::: {.columns}
 
 ::: {.column width='50%'}
 
-:::{.fragment}
+:::{.fragment data-fragment-index="1"}
 
 ```{python}
 #| label: plot-randomised-imd
@@ -252,7 +260,7 @@ ax = problem_randomised.plot_region_geometry_layer(plot_equity=True, interactive
 
 ::: {.column width='50%'}
 
-:::{.fragment}
+:::{.fragment data-fragment-index="1"}
 
 ```{python}
 #| label: plot-true-imd
@@ -266,7 +274,7 @@ ax = problem.plot_region_geometry_layer(plot_equity=True, interactive=False)
 ::::
 
 
-::: {.fragment}
+::: {.fragment data-fragment-index="2"}
 
 
 

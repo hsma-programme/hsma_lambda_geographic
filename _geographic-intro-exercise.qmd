@@ -1,7 +1,7 @@
 ## Quick Discussion
 
 ::: {style="font-size: 85%;"}
-Two minutes — drop your answer in the chat.
+Two minutes — answer the poll. No names, no wrong answers.
 :::
 
 ::: {.value-box icon="fa-solid fa-comments" align="center"}
