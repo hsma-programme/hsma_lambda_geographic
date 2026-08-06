@@ -1,36 +1,66 @@
-# HSMA Quarto Slide Template
+# Anybody Have a Map? — Geographic OR/DS for NHS Leaders
 
-This provides a starting point for making HSMA slides using the Quarto platform.
+Slides and materials for a workshop on geographic operational research and data science,
+part of the [Health Service Modelling Associates (HSMA)](https://hsma.co.uk) programme.
 
-Make your changes to the `slides.qmd` file.
+The audience is mid-to-senior NHS leaders with little or no data science/OR background,
+often in organisations with immature (or no) data science/OR capacity.
 
-Then run `quarto render`.
+The goal isn't to teach them to do this work themselves — it's to give them enough grounding to commission geographic OR/DS projects and critically interpret what comes back.
 
-The final output can be hosted on Github Pages.
+Two related standalone HSMA workshops cover discrete event simulation and machine learning for operational improvement in more depth.
 
-The output of `slides.qmd` is set to automatically be `docs/index.html`, so point your github pages site to the docs folder.
+## Format
 
-![](assets/2025-06-25-16-29-01.png)
+Slides are built with [Quarto](https://quarto.org/) (revealjs), source in `slides.qmd`,
+which stitches together the `_*.qmd` section files in order. Output renders to `docs/`
+for GitHub Pages hosting.
+
+The centrepiece is an interactive exercise: attendees work through a Streamlit "game"
+(hosted separately at `C:/geographic_or_ds_playground`) where they pick a handful of
+analyses from a pool of options and naively choose a "best" site after each, then face
+the fact that different reasonable analyses point at different answers — setting up the
+case for location optimisation.
+
+## Rendering
+
+```
+quarto render
+```
+
+Output goes to `docs/index.html`. GitHub Pages is pointed at the `docs/` folder.
+
+Python dependencies (routing/OSM tooling used by some slide examples, plus Jupyter/lint
+tooling) are managed via `pyproject.toml`.
+
+## Before delivery
+
+**[final-things-to-check.md](final-things-to-check.md)** is the standing pre-delivery
+checklist. Several slides hard-code figures (candidate site counts, combination counts,
+number of optimiser measures, briefing budget) that actually live in the companion
+Streamlit app's code and data. If you change the app, its data, or its scoring metrics,
+check that file and update the affected slides before running the workshop.
 
 ## Notes
 
-After making any changes to the *custom.scss* file, close any quarto preview windows and/or terminals you have open, then start the preview from scratch. Updates will not be pulled through when saving the updated file or re-clicking on preview, even if the page appears to reload.
+After editing `custom.scss`, close any open Quarto preview windows/terminals and restart
+the preview from scratch — style changes don't reliably hot-reload.
 
+### Installed extensions
 
-## Installed extensions
+- [quarto-stlite](https://github.com/whitphx/quarto-stlite) — embed interactive Streamlit apps
+- [quarto-verticator](https://github.com/Martinomagnifico/quarto-verticator) — navigation for vertical slide stacks
+- [reveal-header](https://github.com/shafayetShafee/reveal-header) — slide headers
 
-Various extensions have been pre-installed for convenience.
+### Useful shortcuts (presenting)
 
-These include
+- `q` — toggle mouse to/from laser pointer
+- `f` — fullscreen
+- `s` — speaker view
+- `Alt` + click — zoom in on a point; `Alt` + click again to reset
 
-- [quarto-stlite](https://github.com/whitphx/quarto-stlite) for embedding of interactive streamlit apps
-- [quarto-verticator](https://github.com/Martinomagnifico/quarto-verticator) for visibility and easy navigation of vertical slide stacks
-- [reveal-header](https://github.com/shafayetShafee/reveal-header) for adding a header
+## Licence
 
-
-## Useful shortcuts
-
-- Press 'q' to turn the mouse to/from a laser pointer.
-- Press 'f' to put the slides into fullscreen
-- Press 's' to bring up the speaker view
-- Hold 'Alt' and click somewhere on the slide to zoom in. Click again while holding 'Alt' to return to the original zoom level.
+Code is MIT-licensed; all other content (slides, text, images) is
+[CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/). See
+[LICENCE.md](LICENCE.md).
