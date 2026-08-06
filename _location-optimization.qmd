@@ -207,6 +207,55 @@ The model doesn't decide which of these matters. [**You**]{style="color:yellow"}
 :::
 
 
+## When Objectives Disagree
+
+Say you're choosing a car. You care about two things: **price**, and **boot space**.
+
+:::: {.columns}
+
+::: {.column width='33%'}
+::: {.value-box fragment="fade-in"}
+**Car A**
+
+Cheap. Tiny boot.
+:::
+:::
+
+::: {.column width='33%'}
+::: {.value-box fragment="fade-in"}
+**Car B**
+
+Expensive. Huge boot.
+:::
+:::
+
+::: {.column width='33%'}
+::: {.value-box style="opacity: 0.6;" fragment="fade-in"}
+**Car C**
+
+Expensive. Tiny boot.
+:::
+:::
+
+::::
+
+::: {.fragment}
+Car A and Car B are both [**defensible**]{style="color:yellow"} — neither beats the other. Each wins on something you might care about.
+:::
+
+::: {.fragment}
+Car C isn't. Something else beats it on price *and* boot space at once. Nobody would choose it — rule it out.
+:::
+
+::: {.fragment}
+
+::: {.value-box}
+Today's optimiser does exactly this, across more objectives and many more options. What it hands back isn't one right answer — it's a shortlist of **defensible** ones, like Car A and Car B.
+:::
+
+:::
+
+
 ## Decision *Support*, not Decisions
 
 Like most good operational research, this should be treated as *decision support*
