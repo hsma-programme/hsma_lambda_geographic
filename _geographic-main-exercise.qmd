@@ -55,6 +55,41 @@ You'll be asked to pick a site as you go. That's deliberate — **go with your g
 :::
 
 
+## Before You Begin
+
+:::: {.columns}
+
+::: {.column width='33%'}
+::: {.value-box icon="fa-solid fa-people-group"}
+We will put you into breakout rooms in groups of 4-8.
+:::
+:::
+
+::: {.column width='33%'}
+::: {.value-box icon="fa-solid fa-display"}
+Choose one 'driver', who will load the app and share their screen.
+
+Everyone else feeds into making the choices.
+:::
+:::
+
+::: {.column width='33%'}
+::: {.value-box icon="fa-solid fa-hourglass-half"}
+**45 minutes** — countdown visible in your room.
+:::
+:::
+
+::::
+
+::: {.fragment}
+If everyone opens the app separately, you'd each get your own progress, not a shared one — and that's not going to work so well.
+
+You might overload the app server too, so it would break for everyone!
+
+So please only have one person open the app per group.
+:::
+
+
 # Debrief
 
 ## So — where did you land?
