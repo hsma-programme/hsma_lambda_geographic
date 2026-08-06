@@ -226,3 +226,64 @@ The best site on paper might be the one you can't build on.
 And once a service opens, demand you never knew about can appear.
 
 :::
+
+
+## Questions to Ask Your Analyst
+
+Before you trust a map — or a ranking — some questions are always worth asking.
+
+:::: {.columns}
+
+::: {.column width='50%'}
+::: {.value-box icon="bi bi-sliders" fragment="fade-in" icon-position="left"}
+What was this optimised for — and who chose that?
+:::
+:::
+
+::: {.column width='50%'}
+::: {.value-box icon="bi bi-signpost-fill" fragment="fade-in" icon-position="left"}
+Who did the model assume simply can't be reached?
+:::
+:::
+
+::::
+
+:::: {.columns}
+
+::: {.column width='50%'}
+::: {.value-box icon="bi bi-car-front-fill" fragment="fade-in" icon-position="left"}
+What travel mode, and what time of day, is this based on?
+:::
+:::
+
+::: {.column width='50%'}
+::: {.value-box icon="bi bi-palette-fill" fragment="fade-in" icon-position="left"}
+This colour is an average for the whole area. Who does it hide?
+:::
+:::
+
+::::
+
+:::: {.columns}
+
+::: {.column width='50%'}
+::: {.value-box icon="bi bi-bounding-box" fragment="fade-in" icon-position="left"}
+Would the answer change if the boundaries had been drawn differently?
+:::
+:::
+
+::: {.column width='50%'}
+::: {.value-box icon="bi bi-list-ol" fragment="fade-in" icon-position="left"}
+What's the second-best option — and how much worse is it, really?
+:::
+:::
+
+::::
+
+::: {.fragment}
+
+::: {.value-box}
+You won't remember all six. Remember the first: **what was this optimised for, and who chose that?**
+:::
+
+:::
