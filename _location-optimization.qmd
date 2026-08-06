@@ -74,7 +74,11 @@ I need to work out where to put a *load* of sites where none currently 'exist'
 
 ## Why can't we just eyeball it?
 
-Let's imagine you've got 14 candidate sites, and you need to open some.
+Fourteen candidate sites, and funding for one. That's fourteen options — small enough to list on a whiteboard.
+
+::: {.fragment}
+Until the question changes.
+:::
 
 :::: {.columns}
 
@@ -121,7 +125,38 @@ Options to weigh up when opening 6 sites.
 ::::
 
 ::: {.fragment}
-**Location Optimization** is a branch of operational research that allows us to evaluate and rank these combinations
+Every site you add to the question multiplies the answers.
+:::
+
+
+## And that's the easy part
+
+Each of those options has to be judged against [**several different measures at once**]{style="color:yellow"} — and those measures disagree with each other.
+
+::: {.fragment}
+
+At fourteen options, a patient analyst can at least *build* the table.
+
+:::
+
+::: {.fragment}
+
+Reading it is another matter — fourteen rows, a column for every measure, and no single row that wins on all of them.
+
+:::
+
+::: {.fragment}
+
+And nobody stops at fourteen. The neonatal project we'll look at later chose from **22 candidate sites** — run the same escalation out that far and you're not weighing up hundreds of combinations. You're into the thousands.
+
+:::
+
+::: {.fragment}
+
+::: {.value-box}
+**Location Optimization** is the branch of operational research that scores every combination against every measure — and tells you which handful are actually worth arguing about.
+:::
+
 :::
 
 
