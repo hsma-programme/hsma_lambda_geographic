@@ -73,6 +73,17 @@ data or scoring.
 - [ ] **Placeholder slides** flagged in the 2026-07-30 review and still empty:
       Routing and Scheduling, the dialysis showcase, and Boundary Optimization in
       [_other-geographic-techniques.qmd](_other-geographic-techniques.qmd).
+- [ ] **Zoom polls need creating before delivery.** Three slides now assume a live poll
+      rather than a chat prompt (delivery is online, no in-room pairing):
+      [_geographic-key-concepts.qmd](_geographic-key-concepts.qmd) "Tobler's First Law in
+      Action" (single-choice: left / right — which map is the real Devon), the same file's
+      "Choropleths + Points" (free text, anonymous — "where would you put a new centre?"),
+      and [_geographic-intro-exercise.qmd](_geographic-intro-exercise.qmd) "Quick Discussion"
+      (free text, anonymous — "how does geography already play into decisions?"). The two
+      free-text ones need Zoom's "short answer" poll question type, which isn't available on
+      every account tier — confirm it's enabled before relying on it live, and have a chat
+      fallback ready if not. None of these are auto-generated from the deck, so they need
+      building by hand in the Zoom host controls ahead of time.
 
 ## Consistency to eyeball on a full run-through
 
