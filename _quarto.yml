@@ -1,6 +1,10 @@
 project:
   title: "Title"
   output-dir: docs
+  render:
+    - slides.qmd
+  post-render:
+    - _docs_cleanup.py
 
 format:
   revealjs:

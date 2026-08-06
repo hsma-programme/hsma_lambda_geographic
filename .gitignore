@@ -11,7 +11,6 @@ data/south_west_to_wales-260729_valhalla.json_tiles
 data/south_west_to_wales-260729_valhalla.json_tiles/*
 south_west_to_wales-260729_valhalla.json.json
 
-docs/
 _*_files/
 notes/
 
@@ -24,6 +23,5 @@ _*.html
 _quarto_internal_scss_error.scss
 
 .vscode
-docs/custom.scss
 
 early-planning-jottings.md

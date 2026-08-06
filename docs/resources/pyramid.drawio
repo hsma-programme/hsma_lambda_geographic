@@ -1,0 +1,296 @@
+<mxfile host="app.diagrams.net" pages="3">
+  <diagram id="IZ4XBnx-CNkHn_6aBTop" name="Page-1">
+    <mxGraphModel dx="2855" dy="1070" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="aR2ueLvvG67SQGymdiQw-23" parent="1" style="verticalLabelPosition=middle;verticalAlign=middle;html=1;shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;size=0.13636363636363635;arcSize=10;flipV=1;labelPosition=center;align=center;legacyAnchorPoints=0;rotation=-180;fillColor=light-dark(#FFFFFF,#003366);" value="" vertex="1">
+          <mxGeometry height="130" width="660" x="240" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="aR2ueLvvG67SQGymdiQw-22" parent="1" style="verticalLabelPosition=middle;verticalAlign=middle;html=1;shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;size=0.1799107142857142;arcSize=10;flipV=1;labelPosition=center;align=center;legacyAnchorPoints=0;rotation=-180;fillColor=light-dark(#FFFFFF,#666600);" value="" vertex="1">
+          <mxGeometry height="130" width="480" x="330" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="aR2ueLvvG67SQGymdiQw-21" parent="1" style="triangle;whiteSpace=wrap;html=1;rotation=-90;fillColor=light-dark(#FFFFFF,#333300);" value="" vertex="1">
+          <mxGeometry height="308.79" width="229.03" x="455.25" y="101.55" as="geometry" />
+        </mxCell>
+        <mxCell id="aR2ueLvvG67SQGymdiQw-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Lexend;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DLexend;fontStyle=1;fontSize=21;" value="Descriptive Analytics" vertex="1">
+          <mxGeometry height="30" width="220" x="460" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="aR2ueLvvG67SQGymdiQw-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Lexend;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DLexend;fontSize=14;" value="What is happening now, and what happened previously?&amp;nbsp;" vertex="1">
+          <mxGeometry height="30" width="390" x="370" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="aR2ueLvvG67SQGymdiQw-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontStyle=1;fontSize=21;" value="Predictive Analytics" vertex="1">
+          <mxGeometry height="30" width="220" x="460" y="414" as="geometry" />
+        </mxCell>
+        <mxCell id="aR2ueLvvG67SQGymdiQw-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontStyle=1;fontSize=21;" value="Prescriptive&lt;div&gt;Analytics&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="220" x="460" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="aR2ueLvvG67SQGymdiQw-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontSize=14;" value="What will happen?" vertex="1">
+          <mxGeometry height="30" width="280" x="430" y="444" as="geometry" />
+        </mxCell>
+        <mxCell id="aR2ueLvvG67SQGymdiQw-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontSize=14;" value="What should we do?" vertex="1">
+          <mxGeometry height="30" width="280" x="430" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="aR2ueLvvG67SQGymdiQw-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=20;fontFamily=Lexend;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DLexend;fontColor=light-dark(#000000,#FFFF00);" value="Discrete Event Simulation" vertex="1">
+          <mxGeometry height="30" width="210" x="790" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="aR2ueLvvG67SQGymdiQw-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=20;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontColor=light-dark(#000000,#FFFF00);" value="Location Optimization" vertex="1">
+          <mxGeometry height="30" width="210" x="180" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="aR2ueLvvG67SQGymdiQw-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=20;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontColor=light-dark(#000000,#FFFF00);" value="Machine Learning Models" vertex="1">
+          <mxGeometry height="30" width="210" x="816" y="419" as="geometry" />
+        </mxCell>
+        <mxCell id="aR2ueLvvG67SQGymdiQw-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=20;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontColor=light-dark(#000000,#FFFF00);" value="Time series forecasting" vertex="1">
+          <mxGeometry height="30" width="210" x="162" y="378" as="geometry" />
+        </mxCell>
+        <mxCell id="aR2ueLvvG67SQGymdiQw-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=20;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontColor=light-dark(#000000, #47afff);" value="Performance Dashboards" vertex="1">
+          <mxGeometry height="30" width="210" x="220" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="aR2ueLvvG67SQGymdiQw-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=20;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontColor=light-dark(#000000, #47afff);" value="Regular KPI Reporting" vertex="1">
+          <mxGeometry height="30" width="230" x="660" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="aR2ueLvvG67SQGymdiQw-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=20;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontColor=light-dark(#000000, #47afff);" value="Benchmarking" vertex="1">
+          <mxGeometry height="30" width="210" x="430" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="aR2ueLvvG67SQGymdiQw-17" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" value="" vertex="1">
+          <mxGeometry height="110" width="50" x="100" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="aR2ueLvvG67SQGymdiQw-18" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" value="" vertex="1">
+          <mxGeometry height="360" width="50" x="99" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="aR2ueLvvG67SQGymdiQw-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=20;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontColor=light-dark(#000000,#66B2FF);" value="Looking Backwards&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Understanding What Happened&lt;/font&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;Currently ~90%&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="192" width="210" x="-114" y="474" as="geometry" />
+        </mxCell>
+        <mxCell id="aR2ueLvvG67SQGymdiQw-20" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=20;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontColor=light-dark(#000000,#FFFF00);" value="Looking Forwards&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Supporting Future&amp;nbsp;&lt;/font&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Decisions&lt;/font&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;Currently ~10%&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="165" width="210" x="-121" y="237.5" as="geometry" />
+        </mxCell>
+        <mxCell id="aR2ueLvvG67SQGymdiQw-26" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=0.559;entryY=0.267;entryDx=0;entryDy=0;entryPerimeter=0;" target="aR2ueLvvG67SQGymdiQw-21" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="344" y="255" as="sourcePoint" />
+            <mxPoint x="440" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aR2ueLvvG67SQGymdiQw-27" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="340" y="397" as="sourcePoint" />
+            <mxPoint x="383" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aR2ueLvvG67SQGymdiQw-28" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="760" y="419" as="sourcePoint" />
+            <mxPoint x="821" y="423" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aR2ueLvvG67SQGymdiQw-29" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="660" y="270" as="sourcePoint" />
+            <mxPoint x="800" y="284" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aR2ueLvvG67SQGymdiQw-31" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="810" y="290" as="sourcePoint" />
+            <mxPoint x="735" y="386" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="Pm2KWndlR01JrFwTORo3" name="Page-2">
+    <mxGraphModel dx="1927" dy="396" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="F4qzl5AlMj9qsMcro32f-2" parent="1" style="verticalLabelPosition=middle;verticalAlign=middle;html=1;shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;size=0.13636363636363635;arcSize=10;flipV=1;labelPosition=center;align=center;legacyAnchorPoints=0;rotation=-180;fillColor=light-dark(#FFFFFF,#003366);" value="" vertex="1">
+          <mxGeometry height="130" width="660" x="371" y="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="F4qzl5AlMj9qsMcro32f-3" parent="1" style="verticalLabelPosition=middle;verticalAlign=middle;html=1;shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;size=0.18043478260869497;arcSize=10;flipV=1;labelPosition=center;align=center;legacyAnchorPoints=0;rotation=-180;fillColor=light-dark(#FFFFFF,#666600);textOpacity=20;opacity=20;" value="" vertex="1">
+          <mxGeometry height="130" width="480" x="461" y="1070" as="geometry" />
+        </mxCell>
+        <mxCell id="F4qzl5AlMj9qsMcro32f-4" parent="1" style="triangle;whiteSpace=wrap;html=1;rotation=-90;fillColor=light-dark(#FFFFFF,#333300);textOpacity=20;opacity=20;" value="" vertex="1">
+          <mxGeometry height="305.7" width="229.03" x="586.49" y="802.3" as="geometry" />
+        </mxCell>
+        <mxCell id="F4qzl5AlMj9qsMcro32f-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Lexend;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DLexend;fontStyle=1;fontSize=21;" value="Descriptive Analytics" vertex="1">
+          <mxGeometry height="30" width="220" x="591" y="1230" as="geometry" />
+        </mxCell>
+        <mxCell id="F4qzl5AlMj9qsMcro32f-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Lexend;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DLexend;fontSize=14;" value="What is happening now, and what happened previously?&amp;nbsp;" vertex="1">
+          <mxGeometry height="30" width="390" x="501" y="1270" as="geometry" />
+        </mxCell>
+        <mxCell id="F4qzl5AlMj9qsMcro32f-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontStyle=1;fontSize=21;textOpacity=20;opacity=20;" value="Predictive Analytics" vertex="1">
+          <mxGeometry height="30" width="220" x="591" y="1114" as="geometry" />
+        </mxCell>
+        <mxCell id="F4qzl5AlMj9qsMcro32f-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontStyle=1;fontSize=21;textOpacity=20;opacity=20;" value="Prescriptive&lt;div&gt;Analytics&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="220" x="591" y="970" as="geometry" />
+        </mxCell>
+        <mxCell id="F4qzl5AlMj9qsMcro32f-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontSize=14;textOpacity=20;opacity=20;" value="What will happen?" vertex="1">
+          <mxGeometry height="30" width="280" x="561" y="1144" as="geometry" />
+        </mxCell>
+        <mxCell id="F4qzl5AlMj9qsMcro32f-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontSize=14;textOpacity=20;opacity=20;" value="What should we do?" vertex="1">
+          <mxGeometry height="30" width="280" x="561" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="F4qzl5AlMj9qsMcro32f-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=20;fontFamily=Lexend;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DLexend;fontColor=light-dark(#000000,#FFFF00);textOpacity=20;opacity=20;" value="Discrete Event Simulation" vertex="1">
+          <mxGeometry height="30" width="210" x="921" y="970" as="geometry" />
+        </mxCell>
+        <mxCell id="F4qzl5AlMj9qsMcro32f-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=20;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontColor=light-dark(#000000,#FFFF00);textOpacity=20;opacity=20;" value="Location Optimization" vertex="1">
+          <mxGeometry height="30" width="210" x="311" y="950" as="geometry" />
+        </mxCell>
+        <mxCell id="F4qzl5AlMj9qsMcro32f-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=20;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontColor=light-dark(#000000,#FFFF00);textOpacity=20;opacity=20;" value="Machine Learning Models" vertex="1">
+          <mxGeometry height="30" width="210" x="947" y="1119" as="geometry" />
+        </mxCell>
+        <mxCell id="F4qzl5AlMj9qsMcro32f-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=20;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontColor=light-dark(#000000,#FFFF00);textOpacity=20;opacity=20;" value="Time series forecasting" vertex="1">
+          <mxGeometry height="30" width="210" x="293" y="1078" as="geometry" />
+        </mxCell>
+        <mxCell id="F4qzl5AlMj9qsMcro32f-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=20;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontColor=light-dark(#000000, #47afff);" value="Performance Dashboards" vertex="1">
+          <mxGeometry height="30" width="210" x="351" y="1350" as="geometry" />
+        </mxCell>
+        <mxCell id="F4qzl5AlMj9qsMcro32f-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=20;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontColor=light-dark(#000000, #47afff);" value="Regular KPI Reporting" vertex="1">
+          <mxGeometry height="30" width="230" x="791" y="1350" as="geometry" />
+        </mxCell>
+        <mxCell id="F4qzl5AlMj9qsMcro32f-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=20;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontColor=light-dark(#000000, #47afff);" value="Benchmarking" vertex="1">
+          <mxGeometry height="30" width="210" x="561" y="1350" as="geometry" />
+        </mxCell>
+        <mxCell id="F4qzl5AlMj9qsMcro32f-20" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" value="" vertex="1">
+          <mxGeometry height="110" width="50" x="231" y="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="F4qzl5AlMj9qsMcro32f-21" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;textOpacity=20;opacity=20;" value="" vertex="1">
+          <mxGeometry height="360" width="50" x="230" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="F4qzl5AlMj9qsMcro32f-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=20;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontColor=light-dark(#000000,#66B2FF);" value="Looking Backwards&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Understanding What Happened&lt;/font&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;Currently ~90%&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="192" width="210" x="17" y="1174" as="geometry" />
+        </mxCell>
+        <mxCell id="F4qzl5AlMj9qsMcro32f-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=20;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontColor=light-dark(#000000,#FFFF00);textOpacity=20;opacity=20;" value="Looking Forwards&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Supporting Future&amp;nbsp;&lt;/font&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Decisions&lt;/font&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;Currently ~10%&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="165" width="210" x="10" y="937.5" as="geometry" />
+        </mxCell>
+        <mxCell id="F4qzl5AlMj9qsMcro32f-24" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=0.559;entryY=0.267;entryDx=0;entryDy=0;entryPerimeter=0;textOpacity=20;opacity=20;" target="F4qzl5AlMj9qsMcro32f-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="475" y="955" as="sourcePoint" />
+            <mxPoint x="571" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F4qzl5AlMj9qsMcro32f-25" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;textOpacity=20;opacity=20;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="471" y="1097" as="sourcePoint" />
+            <mxPoint x="514" y="1120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F4qzl5AlMj9qsMcro32f-26" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;textOpacity=20;opacity=20;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="891" y="1119" as="sourcePoint" />
+            <mxPoint x="952" y="1123" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F4qzl5AlMj9qsMcro32f-27" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;textOpacity=20;opacity=20;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="791" y="970" as="sourcePoint" />
+            <mxPoint x="931" y="984" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="F4qzl5AlMj9qsMcro32f-28" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;textOpacity=20;opacity=20;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="941" y="990" as="sourcePoint" />
+            <mxPoint x="866" y="1086" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Copy of Page-1" id="WrMqJY6PM-UFe7wDYrX8">
+    <mxGraphModel dx="2518" dy="856" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="evKbcFUHYceziwqD26t5-0" />
+        <mxCell id="evKbcFUHYceziwqD26t5-1" parent="evKbcFUHYceziwqD26t5-0" />
+        <mxCell id="evKbcFUHYceziwqD26t5-2" parent="evKbcFUHYceziwqD26t5-1" style="verticalLabelPosition=middle;verticalAlign=middle;html=1;shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;size=0.13636363636363635;arcSize=10;flipV=1;labelPosition=center;align=center;legacyAnchorPoints=0;rotation=-180;fillColor=light-dark(#FFFFFF,#003366);textOpacity=30;opacity=30;" value="" vertex="1">
+          <mxGeometry height="130" width="660" x="240" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="evKbcFUHYceziwqD26t5-3" parent="evKbcFUHYceziwqD26t5-1" style="verticalLabelPosition=middle;verticalAlign=middle;html=1;shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;size=0.1799107142857142;arcSize=10;flipV=1;labelPosition=center;align=center;legacyAnchorPoints=0;rotation=-180;fillColor=light-dark(#FFFFFF,#666600);" value="" vertex="1">
+          <mxGeometry height="130" width="480" x="330" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="evKbcFUHYceziwqD26t5-4" parent="evKbcFUHYceziwqD26t5-1" style="triangle;whiteSpace=wrap;html=1;rotation=-90;fillColor=light-dark(#FFFFFF,#333300);" value="" vertex="1">
+          <mxGeometry height="308.79" width="229.03" x="455.25" y="101.55" as="geometry" />
+        </mxCell>
+        <mxCell id="evKbcFUHYceziwqD26t5-5" parent="evKbcFUHYceziwqD26t5-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Lexend;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DLexend;fontStyle=1;fontSize=21;textOpacity=30;opacity=30;" value="Descriptive Analytics" vertex="1">
+          <mxGeometry height="30" width="220" x="460" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="evKbcFUHYceziwqD26t5-6" parent="evKbcFUHYceziwqD26t5-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Lexend;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DLexend;fontSize=14;textOpacity=30;opacity=30;" value="What is happening now, and what happened previously?&amp;nbsp;" vertex="1">
+          <mxGeometry height="30" width="390" x="370" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="evKbcFUHYceziwqD26t5-7" parent="evKbcFUHYceziwqD26t5-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontStyle=1;fontSize=21;" value="Predictive Analytics" vertex="1">
+          <mxGeometry height="30" width="220" x="460" y="414" as="geometry" />
+        </mxCell>
+        <mxCell id="evKbcFUHYceziwqD26t5-8" parent="evKbcFUHYceziwqD26t5-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontStyle=1;fontSize=21;" value="Prescriptive&lt;div&gt;Analytics&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="220" x="460" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="evKbcFUHYceziwqD26t5-9" parent="evKbcFUHYceziwqD26t5-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontSize=14;" value="What will happen?" vertex="1">
+          <mxGeometry height="30" width="280" x="430" y="444" as="geometry" />
+        </mxCell>
+        <mxCell id="evKbcFUHYceziwqD26t5-10" parent="evKbcFUHYceziwqD26t5-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontSize=14;" value="What should we do?" vertex="1">
+          <mxGeometry height="30" width="280" x="430" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="evKbcFUHYceziwqD26t5-11" parent="evKbcFUHYceziwqD26t5-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=20;fontFamily=Lexend;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DLexend;fontColor=light-dark(#000000,#FFFF00);" value="Discrete Event Simulation" vertex="1">
+          <mxGeometry height="30" width="210" x="790" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="evKbcFUHYceziwqD26t5-12" parent="evKbcFUHYceziwqD26t5-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=20;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontColor=light-dark(#000000,#FFFF00);" value="Location Optimization" vertex="1">
+          <mxGeometry height="30" width="210" x="180" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="evKbcFUHYceziwqD26t5-13" parent="evKbcFUHYceziwqD26t5-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=20;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontColor=light-dark(#000000,#FFFF00);" value="Machine Learning Models" vertex="1">
+          <mxGeometry height="30" width="210" x="816" y="419" as="geometry" />
+        </mxCell>
+        <mxCell id="evKbcFUHYceziwqD26t5-14" parent="evKbcFUHYceziwqD26t5-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=20;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontColor=light-dark(#000000,#FFFF00);" value="Time series forecasting" vertex="1">
+          <mxGeometry height="30" width="210" x="162" y="378" as="geometry" />
+        </mxCell>
+        <mxCell id="evKbcFUHYceziwqD26t5-15" parent="evKbcFUHYceziwqD26t5-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=20;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontColor=light-dark(#000000, #47afff);textOpacity=30;opacity=30;" value="Performance Dashboards" vertex="1">
+          <mxGeometry height="30" width="210" x="220" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="evKbcFUHYceziwqD26t5-16" parent="evKbcFUHYceziwqD26t5-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=20;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontColor=light-dark(#000000, #47afff);textOpacity=30;opacity=30;" value="Regular KPI Reporting" vertex="1">
+          <mxGeometry height="30" width="230" x="660" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="evKbcFUHYceziwqD26t5-17" parent="evKbcFUHYceziwqD26t5-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=20;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontColor=light-dark(#000000, #47afff);textOpacity=30;opacity=30;" value="Benchmarking" vertex="1">
+          <mxGeometry height="30" width="210" x="430" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="evKbcFUHYceziwqD26t5-18" parent="evKbcFUHYceziwqD26t5-1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;textOpacity=30;opacity=30;" value="" vertex="1">
+          <mxGeometry height="110" width="50" x="100" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="evKbcFUHYceziwqD26t5-19" parent="evKbcFUHYceziwqD26t5-1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" value="" vertex="1">
+          <mxGeometry height="360" width="50" x="99" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="evKbcFUHYceziwqD26t5-20" parent="evKbcFUHYceziwqD26t5-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=20;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontColor=light-dark(#000000,#66B2FF);opacity=30;textOpacity=30;" value="Looking Backwards&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Understanding What Happened&lt;/font&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;Currently ~90%&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="192" width="210" x="-114" y="474" as="geometry" />
+        </mxCell>
+        <mxCell id="evKbcFUHYceziwqD26t5-21" parent="evKbcFUHYceziwqD26t5-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=0;fontSize=20;fontFamily=Lexend;fontSource=https://fonts.googleapis.com/css?family=Lexend;fontColor=light-dark(#000000,#FFFF00);" value="Looking Forwards&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Supporting Future&amp;nbsp;&lt;/font&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Decisions&lt;/font&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;Currently ~10%&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="165" width="210" x="-121" y="237.5" as="geometry" />
+        </mxCell>
+        <mxCell id="evKbcFUHYceziwqD26t5-22" edge="1" parent="evKbcFUHYceziwqD26t5-1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=0.559;entryY=0.267;entryDx=0;entryDy=0;entryPerimeter=0;" target="evKbcFUHYceziwqD26t5-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="344" y="255" as="sourcePoint" />
+            <mxPoint x="440" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="evKbcFUHYceziwqD26t5-23" edge="1" parent="evKbcFUHYceziwqD26t5-1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="340" y="397" as="sourcePoint" />
+            <mxPoint x="383" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="evKbcFUHYceziwqD26t5-24" edge="1" parent="evKbcFUHYceziwqD26t5-1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="760" y="419" as="sourcePoint" />
+            <mxPoint x="821" y="423" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="evKbcFUHYceziwqD26t5-25" edge="1" parent="evKbcFUHYceziwqD26t5-1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="660" y="270" as="sourcePoint" />
+            <mxPoint x="800" y="284" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="evKbcFUHYceziwqD26t5-26" edge="1" parent="evKbcFUHYceziwqD26t5-1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="810" y="290" as="sourcePoint" />
+            <mxPoint x="735" y="386" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
