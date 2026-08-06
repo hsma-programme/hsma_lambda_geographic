@@ -47,6 +47,63 @@ What would the potential impact on patients, staff or services be?
 
 # Next Steps
 
+## Today's Goals — Revisited
+
+Six questions, back at the start of the day:
+
+:::: {.columns}
+
+::: {.column width='33%'}
+::: {.value-box fragment="fade-in"}
+What questions can these methods be used to answer?
+:::
+:::
+
+::: {.column width='33%'}
+::: {.value-box fragment="fade-in"}
+How do the methods work, at a high level?
+:::
+:::
+
+::: {.column width='33%'}
+::: {.value-box fragment="fade-in"}
+How do I interact with and interpret these models?
+:::
+:::
+
+::::
+
+:::: {.columns}
+
+::: {.column width='33%'}
+::: {.value-box fragment="fade-in"}
+What problems in my own organisation can these answer?
+:::
+:::
+
+::: {.column width='33%'}
+::: {.value-box fragment="fade-in"}
+What can we tackle together?
+:::
+:::
+
+::: {.column width='33%'}
+::: {.value-box fragment="fade-in"}
+Who can I send from my organisation to learn these skills?
+:::
+:::
+
+::::
+
+::: {.fragment}
+
+::: {.value-box}
+You've spent a day answering all six. What's left is turning that into paperwork — which starts now.
+:::
+
+:::
+
+
 ## Before HSMA 7
 
 :::: {.columns}
