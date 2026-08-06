@@ -1,14 +1,16 @@
 ## Quick Discussion
 
-- How do you make use of maps in your organisation? Which of these are new to you?
+::: {style="font-size: 85%;"}
+Two minutes — drop your answer in the chat.
+:::
 
-- How much do you think geography matters to your organisation?
-
-- How does geography currently play into decisions?
+::: {.value-box icon="fa-solid fa-comments" align="center"}
+How does geography already play into decisions in your organisation?
+:::
 
 ## {.slide data-menu-title="'Where' problems"}
 
-You’ll now divide into groups.
+Hold onto that thought — now you'll divide into groups.
 
 You’ll have 10 minutes to **come up with as many examples as you can of problems you think are geographic problems in your organisations.**
 
