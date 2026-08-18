@@ -118,9 +118,10 @@ Liaise with people in your organisation to identify candidates for the HSMA Prog
 
 ::: {.column width='33%'}
 ::: {.value-box}
-We will record your proposal in our online database - available to others on the Lambda programme as others may have the same issues and want to link up - and provide you with a proposal number.
+Record your proposal in our online database, receiving a proposal number.
 
-You can also edit your proposal or add other proposals using the online form.
+All proposals will be visible to others on the Lambda programme as others may have the same issues and want to link up.
+
 :::
 :::
 
@@ -131,6 +132,13 @@ They should answer YES, and provide the project proposal ID for your proposal(s)
 :::
 
 ::::
+
+## Proposal Recording Website
+
+```{=html}
+<iframe width='1200' height='650' src='https://thecombine.streamlit.app/?embed=true' title='The Combine'></iframe>
+```
+
 
 ## During HSMA 7
 

@@ -70,9 +70,13 @@ filters:
 
 {{< include _geographic-intro-exercise.qmd >}}
 
+
+
 {{< include _location-optimization.qmd >}}
 
 {{< include _geographic-main-exercise.qmd >}}
+
+
 
 {{< include _geographic-showcase.qmd >}}
 
